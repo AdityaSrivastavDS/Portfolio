@@ -1,0 +1,125 @@
+[
+  {
+    "name": "Heart Attack Predictor Web App",
+    "desc": "Developed a Heart Attack Predictor web application aimed at assessing the risk of heart attacks based on user input of key health metrics. ",
+    "image": "logo",
+    "category": "mern",
+    "links": {
+      "view": "https://heart-attack-predictor-fhmr.onrender.com/",
+      "code": "https://github.com/AdityaSrivastavDS/Heart-Attack-Prediction-Web_App"
+    }
+  },
+  {
+    "name": "Amazon Review Sentiment Analysis Model",
+    "desc": "This project focuses on sentiment analysis of Amazon reviews using the RoBERTa pretrained model,the project aims to extract insights from customer feedback on Amazon. ",
+    "image": "review_analyzer",
+    "category": "mern",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Amazon-Reviews-Sentiment-Analysis"
+    }
+  },
+  {
+    "name": "Amazon Reviews Sentiment Analyzer",
+    "desc": "Sentiment analysis tool to classify reviews as positive, negative, or neutral, and provides a visual representation of the sentiment distribution.",
+    "image": "analysis_web",
+    "category": "mern",
+    "links": {
+      "view": "https://amazon-sentiment-analysis-review-web-app.onrender.com/",
+      "code": "https://github.com/AdityaSrivastavDS/Amazon-Sentiment-Analysis-Review-Web-App"
+    }
+  },
+  {
+    "name": "Titanic Classification Model",
+    "desc": "The Titanic Classification project uses machine learning's Logistic regression algorithm to predict a person's likelihood of survival in the event of a sinking.",
+    "image": "titan",
+    "category": "mern",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Bharat_Intern/blob/main/Titanic%20Classification.ipynb"
+    }
+  },
+  {
+    "name": "Stock Price Prediction Model",
+    "desc": "Developed a machine learning model for stock prediction using advanced algorithms and historical market data to forecast future stock prices.",
+    "image": "st",
+    "category": "mern",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Bharat_Intern/blob/main/Stock_price_prediction.ipynb"
+    }
+  },
+  {
+    "name": "AI Voice Assistant",
+    "desc": "Mihir A.I, a Python-based voice assistant that leverages Google Cloud Speech-to-Text for precise command interpretation and OpenAI's GPT-3 for intelligent responses.",
+    "image": "Mihir_Bot",
+    "category": "mern",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/AI-Voice-Assistant"
+    }
+  },
+  {
+    "name": "URL Shortner",
+    "desc": " Crafted a URL shortener using Python Flask, providing concise and user-friendly shortened links for efficient web navigation.",
+    "image": "ur",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/CodeClauseInternship"
+    }
+  },
+  {
+    "name": "Python Complete Guide",
+    "desc": " Welcome to the Python Complete Guide repository. This repository contains a comprehensive collection of Python tutorials and implementations.",
+    "image": "python_guide",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Python-Complete-Guide"
+    }
+  },
+  {
+    "name": "Data Science Complete Guide",
+    "desc": "Welcome to the Data Science Guide Repository! This repository contains comprehensive resources and examples to help you learn Data Science concepts.",
+    "image": "data_science_guide",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Data-Science-Guide"
+    }
+  },
+  {
+    "name": "Hospital Management System",
+    "desc": "Implemented a comprehensive hospital management system using Java and MySQL, streamlining administrative tasks and enhancing patient care.",
+    "image": "hm",
+    "category": "basicweb",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Hospital-Management-System"
+    }
+  },
+  {
+    "name": "Java Complete Guide",
+    "desc": "Welcome to the Java Complete Guide Repository! This repository contains comprehensive resources and examples to help you learn Java programming from the basics to advanced topics.",
+    "image": "java_guide",
+    "category": "basicweb",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Java-Complete-Guide"
+    }
+  },
+  
+ 
+  {
+    "name": "Library Management System",
+    "desc": "Designed a library management system using SQL, facilitating organized cataloging, tracking, and management of library resources for seamless user experience",
+    "image": "lm",
+    "category": "android",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/SQl-Projects"
+    }
+  }
+  
+]

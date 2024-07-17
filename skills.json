@@ -1,0 +1,131 @@
+[
+    {
+        "name": "C#",
+        "icon": "https://cdn.icon-icons.com/icons2/2415/PNG/64/csharp_original_logo_icon_146578.png"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "C++",
+        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "Machine Learning",
+        "icon": "https://img.icons8.com/?size=100&id=GBu1KXnCZZ8j&format=png&color=000000"
+    },
+    {
+        "name": "Heroku",
+        "icon": "https://img.icons8.com/color/48/000000/heroku.png"
+    },
+    {
+        "name": "Data Analytics",
+        "icon": "https://img.icons8.com/?size=100&id=mOCU2P4rcj4p&format=png&color=000000"
+    },
+    {
+        "name": "Data Science",
+        "icon": "https://img.icons8.com/?size=100&id=lIjOYS10WPHg&format=png&color=000000"
+    },
+    {
+        "name": "Flask",
+        "icon": "https://img.icons8.com/ios-filled/50/000000/flask.png"
+    },
+    {
+        "name": "Android",
+        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
+    },
+    {
+        "name": "Canva",
+        "icon": "https://img.icons8.com/color/48/000000/canva.png"
+    },
+    {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/color/48/000000/figma.png"
+    },
+    {
+        "name": "Adobe",
+        "icon": "https://img.icons8.com/?size=100&id=gav46YArUSy1&format=png&color=000000"
+    },
+    {
+        "name": "Product Management",
+        "icon": "https://img.icons8.com/?size=100&id=5NqU0lK0gFDU&format=png&color=000000"
+    },
+    {
+        "name": "SQL",
+        "icon": "https://img.icons8.com/color/48/000000/sql.png"
+    },
+    {
+        "name": "Oracle",
+        "icon": "https://img.icons8.com/color/48/000000/oracle-logo.png"
+    },
+    {
+        "name": "Git",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+        "name": "Netlify",
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    },
+    {
+        "name": "WordPress",
+        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
+    },    
+
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/?size=100&id=lTKW3iI3wIT0&format=png&color=000000"
+    },
+    {
+        "name": "C",
+        "icon": "http://sharptutorial.com/wp-content/uploads/2018/11/icons8-c-programming-1.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/?size=100&id=hGdCwhSHUe6L&format=png&color=000000"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "Azure",
+        "icon": "https://webmobtechcdn.nyc3.cdn.digitaloceanspaces.com/wmt_v4/2021/07/Microsoft-Azure.png"
+    },
+    {
+        "name": "Power BI",
+        "icon": "https://cdn.windowsreport.com/wp-content/uploads/2019/08/Power-BI-LOGO-70x70.png"
+    },
+    {
+        "name": "Tableau",
+        "icon": "https://th.bing.com/th/id/OIP.n6mtoLHRrbCfxbQxfFiQxwAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+        "name": "MS Excel",
+        "icon": "https://icons.iconarchive.com/icons/carlosjj/microsoft-office-2013/72/Excel-icon.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "IBM Cognos",
+        "icon": "https://1directionglobal.com/wp-content/uploads/2020/09/Logo-IBM-Cognos-Analytics.png"
+    }
+]
