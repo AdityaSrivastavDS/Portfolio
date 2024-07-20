@@ -8,7 +8,7 @@
         "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
     },
     {
-        "name": "CSS3",
+        "name": "CSS",
         "icon": "https://img.icons8.com/color/48/000000/css3.png"
     },
     {
@@ -131,4 +131,5 @@
     {
         "name": "Ms Office",
         "icon": "https://img.icons8.com/?size=100&id=67578&format=png&color=000000"
+    }
 ]
