@@ -70,6 +70,46 @@
     }
   },
   {
+    "name": "Madha Ecommerce Sales Dashboard",
+    "desc": "The dashboard provides comprehensive insights into sales performance, customer behavior, and other key metrics to help drive business decisions.",
+    "image": "dashboard",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Madhav-Ecommerce-Sales-Dashboard"
+    }
+  },
+  {
+    "name": "Rubik Cube",
+    "desc": "It allows users to interact with a 3x3x3 Rubik Cube, track their solving time, and keep records of their solving statistics.",
+    "image": "cube",
+    "category": "lamp",
+    "links": {
+      "view": "https://rubikcubes.netlify.app/",
+      "code": "https://github.com/AdityaSrivastavDS/Rubik-s-Cube"
+    }
+  },
+  {
+    "name": "Stick Hero Game",
+    "desc": "The game involves extending a stick to reach the platforms and land safely to score points.",
+    "image": "game",
+    "category": "lamp",
+    "links": {
+      "view": "https://stickherogames.netlify.app/",
+      "code": "https://github.com/AdityaSrivastavDS/Stick-Hero-Game"
+    }
+  },
+  {
+    "name": "Ball Tracker",
+    "desc": "This project involves tracking balls of different colors (Blue, Green, and Red) in a video, recording their entry events into different quadrants, and generating an output video.",
+    "image": "ball",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/SecqurAIse-Technologies-Project"
+    }
+  },
+  {
     "name": "Python Complete Guide",
     "desc": " Welcome to the Python Complete Guide repository. This repository contains a comprehensive collection of Python tutorials and implementations.",
     "image": "python_guide",
@@ -87,6 +127,16 @@
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Data-Science-Guide"
+    }
+  },
+  {
+    "name": "3D Portfolio",
+    "desc": "Tempting 3D portfolio created using Html, CSS, Javascript, React,js, Vite.js and Vue.js",
+    "image": "folio",
+    "category": "lamp",
+    "links": {
+      "view": "https://adityaportfolios.netlify.app/",
+      "code": "https://github.com/AdityaSrivastavDS/3D-Portfolio"
     }
   },
   {
