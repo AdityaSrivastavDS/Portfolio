@@ -5,7 +5,7 @@
     "image": "logo",
     "category": "mern",
     "links": {
-      "view": "https://heart-attack-prediction-webapp-production.up.railway.app/",
+      "view": "https://heart-attack-risk-predictor-web-app.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Heart-Attack-Prediction-Web_App"
     }
   },
@@ -25,7 +25,7 @@
     "image": "analysis_web",
     "category": "mern",
     "links": {
-      "view": "https://amazon-review-sentiment-analyzer-production.up.railway.app/",
+      "view": "https://amazon-review-sentiment-analyzer-web-app.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Amazon-Sentiment-Analysis-Review-Web-App"
     }
   },
