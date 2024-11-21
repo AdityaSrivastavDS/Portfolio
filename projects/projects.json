@@ -174,9 +174,9 @@
 
   {
     "name": "Neural Net ASM",
-    "desc": "This project aims to create a custom machine learning library implemented in Assembly language. The library focuses on neural networks and kernel functions, providing a high-performance and flexible solution for various machine learning tasks.",
+    "desc": "This project aims to create a custom machine learning library implemented in Assembly language. The library focuses on neural networks and kernel functions.",
     "image": "asm",
-    "category": "lamp",
+    "category": "mern",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Neural-NET-ASM"
@@ -198,7 +198,7 @@
     "name": "AI Augmented Design Feedback System",
     "desc": "The AI-Augmented Design Feedback System is an innovative solution aimed at enhancing mechanical design processes by providing AI-powered feedback on efficiency and performance.",
     "image": "ai",
-    "category": "lamp",
+    "category": "mern",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System"
