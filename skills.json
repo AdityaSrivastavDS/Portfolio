@@ -163,5 +163,33 @@
     {
         "name": "Node.js",
         "icon": "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+    },
+    {
+        "name": "Vue.js",
+        "icon": "https://img.icons8.com/?size=100&id=tbleCw0ch6QC&format=png&color=000000"
+    },
+    {
+        "name": "IBM Watson",
+        "icon": "https://img.icons8.com/?size=100&id=x0V8L9HB4W8c&format=png&color=000000"
+    },
+    {
+        "name": "IBM Cloud",
+        "icon": "https://img.icons8.com/?size=100&id=69456&format=png&color=000000"
+    },
+    {
+        "name": "Microsoft SQL Server",
+        "icon": "https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000"
+    },
+    {
+        "name": "Tensorflow",
+        "icon": "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000"
+    },
+    {
+        "name": "Pandas",
+        "icon": "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000"
+    },
+    {
+        "name": "Numpy",
+        "icon": "https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000"
     }
 ]
