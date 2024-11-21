@@ -131,5 +131,33 @@
     {
         "name": "Ms Office",
         "icon": "https://img.icons8.com/?size=100&id=67578&format=png&color=000000"
+    },
+    {
+        "name": "Assembly",
+        "icon": "https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000"
+    },
+    {
+        "name": "Rust",
+        "icon": "https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000"
+    },
+    {
+        "name": "Ruby",
+        "icon": "https://img.icons8.com/?size=100&id=e2hIFBAN6UIe&format=png&color=000000"
+    },
+    {
+        "name": "R",
+        "icon": "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"
+    },
+    {
+        "name": "Apache Spark",
+        "icon": "https://img.icons8.com/?size=100&id=0cRqPqlItA0E&format=png&color=000000"
+    },
+    {
+        "name": "React",
+        "icon": "https://img.icons8.com/?size=100&id=Vra58PN2KmI5&format=png&color=000000"
+    },
+    {
+        "name": "Anaconda",
+        "icon": "https://img.icons8.com/?size=100&id=F4uMFPZgS0gt&format=png&color=000000"
     }
 ]

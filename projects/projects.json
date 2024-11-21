@@ -170,6 +170,50 @@
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/SQl-Projects"
     }
+  },
+
+  {
+    "name": "Neural Net ASM",
+    "desc": "This project aims to create a custom machine learning library implemented in Assembly language. The library focuses on neural networks and kernel functions, providing a high-performance and flexible solution for various machine learning tasks.",
+    "image": "asm",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Neural-NET-ASM"
+    }
+  },
+
+  {
+    "name": "Multilingual Chatbot Integrated Ticket Booking System",
+    "desc": "A Multilingual Chatbot Ticket Booking System enabling ticket reservations, 3D museum model viewing, chatbot assistance, and multi-language web interface support.",
+    "image": "mtb",
+    "category": "lamp",
+    "links": {
+      "view": "https://multilingual-chatbot-ticket-booking.onrender.com/",
+      "code": "https://github.com/AdityaSrivastavDS/Multilingual-Chatbot-Ticket-Booking-System"
+    }
+  },
+
+  {
+    "name": "AI Augmented Design Feedback System",
+    "desc": "The AI-Augmented Design Feedback System is an innovative solution aimed at enhancing mechanical design processes by providing AI-powered feedback on efficiency and performance.",
+    "image": "ai",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System"
+    }
+  },
+
+  {
+    "name": "Cricket Best 11 Analysis Dashboard",
+    "desc": "Cricket Best 11 Analysis Dashboard, a Power BI-based interactive platform designed to help you analyze and select the best playing 11 for cricket teams using detailed player statistics and performance data.",
+    "image": "cric",
+    "category": "lamp",
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Cricket-Best-11-Analysis-Dashboard"
+    }
   }
   
 ]
