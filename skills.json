@@ -159,5 +159,9 @@
     {
         "name": "Anaconda",
         "icon": "https://img.icons8.com/?size=100&id=F4uMFPZgS0gt&format=png&color=000000"
+    },
+    {
+        "name": "Node.js",
+        "icon": "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
     }
 ]
