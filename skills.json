@@ -29,11 +29,15 @@
     },
     {
         "name": "Data Analytics",
-        "icon": "https://img.icons8.com/?size=100&id=mOCU2P4rcj4p&format=png&color=000000"
+        "icon": "https://img.icons8.com/?size=100&id=IKEeGrkdNNMS&format=png&color=000000"
     },
     {
         "name": "Data Science",
         "icon": "https://img.icons8.com/?size=100&id=lIjOYS10WPHg&format=png&color=000000"
+    },
+    {
+        "name": "Big Data",
+        "icon": "https://img.icons8.com/?size=100&id=111400&format=png&color=000000"
     },
     {
         "name": "Flask",
@@ -57,11 +61,11 @@
     },
     {
         "name": "Product Management",
-        "icon": "https://img.icons8.com/?size=100&id=5NqU0lK0gFDU&format=png&color=000000"
+        "icon": "https://img.icons8.com/?size=100&id=114624&format=png&color=000000"
     },
     {
         "name": "SQL",
-        "icon": "https://img.icons8.com/color/48/000000/sql.png"
+        "icon": "https://img.icons8.com/?size=100&id=hKw7Mn8TNTuz&format=png&color=000000"
     },
     {
         "name": "Oracle",
@@ -107,6 +111,10 @@
     {
         "name": "Azure",
         "icon": "https://webmobtechcdn.nyc3.cdn.digitaloceanspaces.com/wmt_v4/2021/07/Microsoft-Azure.png"
+    },
+    {
+        "name": "Google Cloud",
+        "icon": "https://img.icons8.com/?size=100&id=110580&format=png&color=000000"
     },
     {
         "name": "Power BI",
