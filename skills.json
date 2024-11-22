@@ -105,6 +105,10 @@
         "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
     },
     {
+        "name": "PostgreSQL",
+        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+    },
+    {
         "name": "AWS",
         "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
     },
@@ -179,6 +183,10 @@
     {
         "name": "IBM Watson",
         "icon": "https://img.icons8.com/?size=100&id=x0V8L9HB4W8c&format=png&color=000000"
+    },
+    {
+        "name": "IBM SPSS Modeller",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spss/spss-original.svg"
     },
     {
         "name": "IBM Cloud",
