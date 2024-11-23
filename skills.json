@@ -1,7 +1,43 @@
 [
     {
+        "name": "Python",
+        "icon": "https://img.icons8.com/?size=100&id=hGdCwhSHUe6L&format=png&color=000000"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/?size=100&id=lTKW3iI3wIT0&format=png&color=000000"
+    },
+    {
+        "name": "C++",
+        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    },
+    {
         "name": "C#",
         "icon": "https://cdn.icon-icons.com/icons2/2415/PNG/64/csharp_original_logo_icon_146578.png"
+    },
+    {
+        "name": "C",
+        "icon": "http://sharptutorial.com/wp-content/uploads/2018/11/icons8-c-programming-1.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "Rust",
+        "icon": "https://img.icons8.com/?size=100&id=meGB5Ip7aLFG&format=png&color=000000"
+    },
+    {
+        "name": "Ruby",
+        "icon": "https://img.icons8.com/?size=100&id=e2hIFBAN6UIe&format=png&color=000000"
+    },
+    {
+        "name": "Assembly",
+        "icon": "https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000"
+    },
+    {
+        "name": "R",
+        "icon": "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"
     },
     {
         "name": "HTML5",
@@ -12,20 +48,44 @@
         "icon": "https://img.icons8.com/color/48/000000/css3.png"
     },
     {
-        "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+        "name": "Node.js",
+        "icon": "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
     },
     {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+        "name": "React",
+        "icon": "https://img.icons8.com/?size=100&id=Vra58PN2KmI5&format=png&color=000000"
+    },
+    {
+        "name": "Vue.js",
+        "icon": "https://img.icons8.com/?size=100&id=tbleCw0ch6QC&format=png&color=000000"
+    },
+    {
+        "name": "Flask",
+        "icon": "https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000"
+    },
+    {
+        "name": "Heroku",
+        "icon": "https://img.icons8.com/color/48/000000/heroku.png"
+    },
+    {
+        "name": "Netlify",
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
     },
     {
         "name": "Machine Learning",
         "icon": "https://img.icons8.com/?size=100&id=GBu1KXnCZZ8j&format=png&color=000000"
     },
     {
-        "name": "Heroku",
-        "icon": "https://img.icons8.com/color/48/000000/heroku.png"
+        "name": "Tensorflow",
+        "icon": "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000"
+    },
+    {
+        "name": "Pandas",
+        "icon": "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000"
+    },
+    {
+        "name": "Numpy",
+        "icon": "https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000"
     },
     {
         "name": "Data Analytics",
@@ -40,73 +100,8 @@
         "icon": "https://img.icons8.com/?size=100&id=111400&format=png&color=000000"
     },
     {
-        "name": "Flask",
-        "icon": "https://img.icons8.com/?size=100&id=ewGOClUtmFX4&format=png&color=000000"
-    },
-    {
-        "name": "Android",
-        "icon": "https://img.icons8.com/?size=100&id=114405&format=png&color=000000"
-    },
-    {
-        "name": "Canva",
-        "icon": "https://img.icons8.com/color/48/000000/canva.png"
-    },
-    {
-        "name": "Figma",
-        "icon": "https://img.icons8.com/color/48/000000/figma.png"
-    },
-    {
-        "name": "Adobe",
-        "icon": "https://img.icons8.com/?size=100&id=gav46YArUSy1&format=png&color=000000"
-    },
-    {
-        "name": "Product Management",
-        "icon": "https://img.icons8.com/?size=100&id=114624&format=png&color=000000"
-    },
-    {
-        "name": "SQL",
-        "icon": "https://img.icons8.com/?size=100&id=hKw7Mn8TNTuz&format=png&color=000000"
-    },
-    {
-        "name": "Oracle",
-        "icon": "https://img.icons8.com/color/48/000000/oracle-logo.png"
-    },
-    {
-        "name": "Git",
-        "icon": "https://img.icons8.com/color/48/000000/git.png"
-    },
-    {
-        "name": "Netlify",
-        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
-    },
-    {
-        "name": "WordPress",
-        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    },    
-
-    {
-        "name": "Java",
-        "icon": "https://img.icons8.com/?size=100&id=lTKW3iI3wIT0&format=png&color=000000"
-    },
-    {
-        "name": "C",
-        "icon": "http://sharptutorial.com/wp-content/uploads/2018/11/icons8-c-programming-1.png"
-    },
-    {
-        "name": "Python",
-        "icon": "https://img.icons8.com/?size=100&id=hGdCwhSHUe6L&format=png&color=000000"
-    },
-    {
-        "name": "MongoDB",
-        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
-    },
-    {
-        "name": "MySQL",
-        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
-    },
-    {
-        "name": "PostgreSQL",
-        "icon": "https://img.icons8.com/?size=100&id=Pv4IGT0TSpt8&format=png&color=000000"
+        "name": "Apache Spark",
+        "icon": "https://img.icons8.com/?size=100&id=0cRqPqlItA0E&format=png&color=000000"
     },
     {
         "name": "AWS",
@@ -121,6 +116,30 @@
         "icon": "https://img.icons8.com/?size=100&id=110580&format=png&color=000000"
     },
     {
+        "name": "SQL",
+        "icon": "https://img.icons8.com/?size=100&id=hKw7Mn8TNTuz&format=png&color=000000"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/?size=100&id=Pv4IGT0TSpt8&format=png&color=000000"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "Microsoft SQL Server",
+        "icon": "https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000"
+    },
+    {
+        "name": "Oracle",
+        "icon": "https://img.icons8.com/color/48/000000/oracle-logo.png"
+    },
+    {
         "name": "Power BI",
         "icon": "https://cdn.windowsreport.com/wp-content/uploads/2019/08/Power-BI-LOGO-70x70.png"
     },
@@ -133,52 +152,8 @@
         "icon": "https://icons.iconarchive.com/icons/carlosjj/microsoft-office-2013/72/Excel-icon.png"
     },
     {
-        "name": "GitHub",
-        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
-    },
-    {
         "name": "IBM Cognos",
         "icon": "https://1directionglobal.com/wp-content/uploads/2020/09/Logo-IBM-Cognos-Analytics.png"
-    },
-    {
-        "name": "Ms Office",
-        "icon": "https://img.icons8.com/?size=100&id=67578&format=png&color=000000"
-    },
-    {
-        "name": "Assembly",
-        "icon": "https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000"
-    },
-    {
-        "name": "Rust",
-        "icon": "https://img.icons8.com/?size=100&id=meGB5Ip7aLFG&format=png&color=000000"
-    },
-    {
-        "name": "Ruby",
-        "icon": "https://img.icons8.com/?size=100&id=e2hIFBAN6UIe&format=png&color=000000"
-    },
-    {
-        "name": "R",
-        "icon": "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"
-    },
-    {
-        "name": "Apache Spark",
-        "icon": "https://img.icons8.com/?size=100&id=0cRqPqlItA0E&format=png&color=000000"
-    },
-    {
-        "name": "React",
-        "icon": "https://img.icons8.com/?size=100&id=Vra58PN2KmI5&format=png&color=000000"
-    },
-    {
-        "name": "Anaconda",
-        "icon": "https://img.icons8.com/?size=100&id=F4uMFPZgS0gt&format=png&color=000000"
-    },
-    {
-        "name": "Node.js",
-        "icon": "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
-    },
-    {
-        "name": "Vue.js",
-        "icon": "https://img.icons8.com/?size=100&id=tbleCw0ch6QC&format=png&color=000000"
     },
     {
         "name": "IBM Watson",
@@ -186,26 +161,34 @@
     },
     {
         "name": "IBM SPSS Modeller",
-        "icon": "https://img.icons8.com/?size=100&id=pvCugreRVSkX&format=png&color=000000"
+        "icon": "https://img.icons8.com/?size=100&id=39908&format=png&color=000000"
     },
     {
         "name": "IBM Cloud",
         "icon": "https://img.icons8.com/?size=100&id=69456&format=png&color=000000"
     },
     {
-        "name": "Microsoft SQL Server",
-        "icon": "https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000"
+        "name": "Git",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
     },
     {
-        "name": "Tensorflow",
-        "icon": "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000"
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
-        "name": "Pandas",
-        "icon": "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000"
+        "name": "WordPress",
+        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
     },
     {
-        "name": "Numpy",
-        "icon": "https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000"
+        "name": "Canva",
+        "icon": "https://img.icons8.com/color/48/000000/canva.png"
+    },
+    {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/color/48/000000/figma.png"
+    },
+    {
+        "name": "Adobe",
+        "icon": "https://img.icons8.com/?size=100&id=gav46Yy9Knxf&format=png&color=000000"
     }
 ]
