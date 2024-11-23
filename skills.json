@@ -189,6 +189,22 @@
     },
     {
         "name": "Adobe",
-        "icon": "https://img.icons8.com/?size=100&id=gav46Yy9Knxf&format=png&color=000000"
+        "icon": "https://img.icons8.com/?size=100&id=gav46YArUSy1&format=png&color=000000"
+    },
+    {
+        "name": "Anaconda",
+        "icon": "https://img.icons8.com/?size=100&id=F4uMFPZgS0gt&format=png&color=000000"
+    },
+    {
+        "name": "Android",
+        "icon": "https://img.icons8.com/?size=100&id=114405&format=png&color=000000"
+    },
+    {
+        "name": "Unity",
+        "icon": "https://img.icons8.com/?size=100&id=55O6KKA9CyIA&format=png&color=000000"
+    },
+    {
+        "name": "Product Management",
+        "icon": "https://img.icons8.com/?size=100&id=114624&format=png&color=000000"
     }
 ]
