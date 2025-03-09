@@ -9,11 +9,11 @@
     },
     {
         "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+        "icon": "https://img.icons8.com/?size=100&id=2T6TKY6whzgV&format=png&color=000000"
     },
     {
         "name": "C#",
-        "icon": "https://cdn.icon-icons.com/icons2/2415/PNG/64/csharp_original_logo_icon_146578.png"
+        "icon": "https://img.icons8.com/?size=100&id=Fycm8TUhWmFU&format=png&color=000000"
     },
     {
         "name": "C",
@@ -30,10 +30,6 @@
     {
         "name": "Ruby",
         "icon": "https://img.icons8.com/?size=100&id=BHBg1MpYDruK&format=png&color=000000"
-    },
-    {
-        "name": "Assembly",
-        "icon": "https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000"
     },
     {
         "name": "R",
