@@ -31,7 +31,7 @@
     }
   },
   {
-    "name": "https://github.com/AdityaSrivastavDS/Mental-Health-Sentiment-Analysis",
+    "name": "Mental Sentiment Analysis",
     "desc": "Analysis aimed at identifying and categorizing various mental health conditions based on user statements. ",
     "image": "mental",
     "category": "mern",
