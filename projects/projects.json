@@ -3,7 +3,7 @@
     "name": "PoseGuard",
     "desc": "Real-time driver monitoring system that detects distracted or unsafe driver postures. ",
     "image": "poseguard",
-    "category": "mern",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/PoseGuard"
@@ -13,7 +13,7 @@
     "name": "Amazon Product Reviews Sentiment Analyzer",
     "desc": "Sentiment analysis tool to classify reviews as positive, negative, or neutral, and provides a visual representation of the sentiment distribution.",
     "image": "analysis_web",
-    "category": "mern",
+    "category": "Web-Development",
     "links": {
       "view": "https://amazon-review-sentiment-analyzer-web-app.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Amazon-Sentiment-Analysis-Review-Web-App"
@@ -24,7 +24,7 @@
     "name": "AI Voice Assistant",
     "desc": "Mihir A.I, a Python-based voice assistant that leverages Google Cloud Speech-to-Text for precise command interpretation and OpenAI's GPT-3 for intelligent responses.",
     "image": "Mihir_Bot",
-    "category": "mern",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/AI-Voice-Assistant"
@@ -34,7 +34,7 @@
     "name": "Mental Sentiment Analysis",
     "desc": "Analysis aimed at identifying and categorizing various mental health conditions based on user statements. ",
     "image": "mental",
-    "category": "mern",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Mental-Health-Sentiment-Analysis"
@@ -44,7 +44,7 @@
     "name": "Ecommerce Sales Dashboard",
     "desc": "The dashboard provides comprehensive insights into sales performance, customer behavior, and other key metrics to help drive business decisions.",
     "image": "dashboard",
-    "category": "lamp",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Madhav-Ecommerce-Sales-Dashboard"
@@ -54,7 +54,7 @@
     "name": "Rubik Cube",
     "desc": "It allows users to interact with a 3x3x3 Rubik Cube, track their solving time, and keep records of their solving statistics.",
     "image": "cube",
-    "category": "lamp",
+    "category": "Web-Development",
     "links": {
       "view": "https://rubikcubes.netlify.app/",
       "code": "https://github.com/AdityaSrivastavDS/Rubik-s-Cube"
@@ -64,7 +64,7 @@
     "name": "Stick Hero Game",
     "desc": "The game involves extending a stick to reach the platforms and land safely to score points.",
     "image": "game",
-    "category": "lamp",
+    "category": "Web-Development",
     "links": {
       "view": "https://stickherogames.netlify.app/",
       "code": "https://github.com/AdityaSrivastavDS/Stick-Hero-Game"
@@ -72,9 +72,9 @@
   },
   {
     "name": "Ball Tracker",
-    "desc": "This project involves tracking balls of different colors (Blue, Green, and Red) in a video, recording their entry events into different quadrants, and generating an output video.",
+    "desc": "This project involves tracking balls of different colors in a video, recording their entry events into different quadrants, and generating an output video.",
     "image": "ball",
-    "category": "lamp",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/SecqurAIse-Technologies-Project"
@@ -84,7 +84,7 @@
     "name": "Python Complete Guide",
     "desc": " Welcome to the Python Complete Guide repository. This repository contains a comprehensive collection of Python tutorials and implementations.",
     "image": "python_guide",
-    "category": "lamp",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Python-Complete-Guide"
@@ -94,7 +94,7 @@
     "name": "Data Science Complete Guide",
     "desc": "Welcome to the Data Science Guide Repository! This repository contains comprehensive resources and examples to help you learn Data Science concepts.",
     "image": "data_science_guide",
-    "category": "lamp",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Data-Science-Guide"
@@ -104,7 +104,7 @@
     "name": "Hospital Management System",
     "desc": "Implemented a comprehensive hospital management system using Java and MySQL, streamlining administrative tasks and enhancing patient care.",
     "image": "hm",
-    "category": "basicweb",
+    "category": "Java",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Hospital-Management-System"
@@ -114,7 +114,7 @@
     "name": "Java Complete Guide",
     "desc": "Welcome to the Java Complete Guide Repository! This repository contains comprehensive resources and examples to help you learn Java programming from the basics to advanced topics.",
     "image": "java_guide",
-    "category": "basicweb",
+    "category": "Java",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Java-Complete-Guide"
@@ -126,7 +126,7 @@
     "name": "Neural Net ASM",
     "desc": "This project aims to create a custom machine learning library implemented in Assembly language. The library focuses on neural networks and kernel functions.",
     "image": "asm",
-    "category": "mern",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Neural-NET-ASM"
@@ -137,7 +137,7 @@
     "name": "Multilingual Chatbot Integrated Ticket Booking System",
     "desc": "A Multilingual Chatbot Ticket Booking System enabling ticket reservations, 3D museum model viewing, chatbot assistance, and multi-language web interface support.",
     "image": "mtb",
-    "category": "lamp",
+    "category": "Web-Development",
     "links": {
       "view": "https://multilingual-chatbot-ticket-booking.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Multilingual-Chatbot-Ticket-Booking-System"
@@ -146,9 +146,9 @@
 
   {
     "name": "AI Augmented Design Feedback System",
-    "desc": "The AI-Augmented Design Feedback System is an innovative solution aimed at enhancing mechanical design processes by providing AI-powered feedback on efficiency and performance.",
+    "desc": "The AI-Augmented Design Feedback System is an innovative solution aimed at enhancing mechanical design processes.",
     "image": "ai",
-    "category": "mern",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System"
@@ -157,9 +157,9 @@
 
   {
     "name": "Cricket Best 11 Analysis Dashboard",
-    "desc": "Cricket Best 11 Analysis Dashboard, a Power BI-based interactive platform designed to help you analyze and select the best playing 11 for cricket teams using detailed player statistics and performance data.",
+    "desc": "Cricket Best 11 Analysis Dashboard, a Power BI-based interactive platform designed to help you analyze and select the best playing 11 for cricket teams.",
     "image": "cric",
-    "category": "lamp",
+    "category": "Data-Science-And-Analytics",
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Cricket-Best-11-Analysis-Dashboard"
