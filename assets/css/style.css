@@ -1312,3 +1312,16 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+#three-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  display: block;
+}
+body > *:not(#three-bg) {
+  position: relative;
+  z-index: 1;
+}
