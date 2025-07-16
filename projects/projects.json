@@ -136,10 +136,10 @@
   {
     "name": "Multilingual Chatbot Integrated Ticket Booking System",
     "desc": "A Multilingual Chatbot Ticket Booking System enabling ticket reservations, 3D museum model viewing, chatbot assistance, and multi-language web interface support.",
-    "image": "mtb",
+    "image": "homepage",
     "category": "Web-Development",
     "links": {
-      "view": "https://multilingual-chatbot-ticket-booking.onrender.com/",
+      "view": "https://museumhub.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Multilingual-Chatbot-Ticket-Booking-System"
     }
   },
