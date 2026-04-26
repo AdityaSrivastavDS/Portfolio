@@ -5,646 +5,324 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
   <meta name="keywords"
-    content="Aditya Srivastav , portfolio, Aditya, Microsoft Student Ambassador, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    content="Aditya Srivastav, Data Analyst, Data Scientist, Product Manager, Product Analyst, analytics portfolio, machine learning portfolio">
   <meta name="description"
-    content="Welcome to Aditya's Portfolio. Microsoft Student Ambassador and Aspiring Data Scientist" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- Font Awesome -->
+    content="Aditya Srivastav's modern decision-intelligence portfolio for Data Analyst, Data Scientist, and Product Manager roles.">
+  <meta property="og:title" content="Aditya Srivastav | Decision Intelligence Portfolio">
+  <meta property="og:description"
+    content="Consulting clarity, analytics execution, and product judgment for data-driven teams.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/photo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Favicon -->
-  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-  <title>Portfolio | Aditya Srivastav</title>
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+
+  <title>Aditya Srivastav | Decision Intelligence Portfolio</title>
 </head>
 
-<body oncontextmenu="return false">
-  <canvas id="three-bg"></canvas>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" data-analytics="nav-logo">
+      <span class="brand__mark">AS</span>
+      <span class="brand__text">
+        <strong>Aditya Srivastav</strong>
+        <small>Decision Intelligence Portfolio</small>
+      </span>
+    </a>
 
-  <!-- pre loader -->
-  <!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
-
-  <!-- navbar starts -->
-  <header>
-    <a href="/" class="logo"><i class="fab fa-node-js"></i> Aditya</a>
-
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class="navbar">
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#thesis">Thesis</a>
+      <a href="#projects">Case Studies</a>
+      <a href="#skills">Capabilities</a>
+      <a href="#proof">Proof</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
+
+    <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open menu"
+      aria-expanded="false" aria-controls="site-nav">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
   </header>
-  <!-- navbar ends -->
 
+  <main id="main">
+    <section class="hero section" id="home" data-section="home">
+      <div class="section__inner hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Associate Consultant -> Data Analyst / Data Scientist / Product Manager</p>
+          <h1>I turn ambiguous business workflows into measurable data products.</h1>
+          <p class="hero__value">
+            My edge is the handoff between business context and technical execution: requirements, clean data, models,
+            dashboards, and product decisions that stakeholders can understand.
+          </p>
 
-  <!-- hero section starts -->
-  <section class="home" id="home">
-    <div id="particles-js"></div>
-
-    <div class="content">
-      <h2>Hi there,<br /> I'm Aditya <span>Srivastav</span></h2>
-      <p>i am into <span class="typing-text"></span></p>
-      <a href="#about" class="btn"><span>About Me</span>
-        <i class="fas fa-arrow-circle-down"></i>
-      </a>
-      <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/adityasrivastav1/"
-              target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="github" aria-label="GitHub" href="https://github.com/AdityaSrivastavDS" target="_blank"><i
-                class="fab fa-github"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/aditya_srivastav_ds/"><i
-                class="fab fa-instagram" target="_blank"></i></a></li>
-          <li><a class="dev" aria-label="Dev" href="https://dev.to/adityasrivastavds" target="_blank"><i
-                class="fab fa-dev"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="image">
-      <img draggable="true" class="tilt" src="" alt="">
-    </div>
-  </section>
-  <!-- hero section ends -->
-
-
-  <!-- about section starts -->
-  <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-
-    <div class="row">
-
-      <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/photo.png" alt="">
-      </div>
-      <div class="content">
-        <h3>I'm Aditya</h3>
-        <span class="tag">Associate Consultant (Prospecta Software)</span>
-
-        <p>I’m a passionate and driven individual, with a strong foundation in technology and problem-solving, I enjoy
-          working on
-          projects that challenge me to think critically, learn continuously, and innovate beyond boundaries. I'm
-          naturally
-          curious and thrive on exploring new ideas, whether in coding, creative problem-solving, or emerging
-          technologies.
-          My approach combines consistent self-learning with hands-on experimentation, allowing me to grow both
-          personally and
-          professionally in a rapidly evolving world. </p>
-
-        <div class="box-container">
-          <!-- <div class="box">
-              <p><span> age: </span> 20</p>
-              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-            </div> -->
-          <div class="box">
-            <p><span> email : </span> adityasrivastav729@gmail.com</p>
-            <p><span> place : </span> Noida, India - 201303</p>
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="btn btn--primary" href="#projects" data-analytics="hero-case-studies">
+              <span>Read Case Studies</span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn--secondary"
+              href="https://drive.google.com/file/d/1NCRBfCQBfQyThLRbYbnMCAb8PENvMMGH/view?usp=sharing"
+              target="_blank" rel="noopener" data-analytics="hero-resume">
+              <span>Resume</span>
+              <i class="fas fa-download" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn--ghost" href="#contact" data-analytics="hero-contact">
+              <span>Contact</span>
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
 
-        <div class="resumebtn">
-          <a href="https://drive.google.com/file/d/1NCRBfCQBfQyThLRbYbnMCAb8PENvMMGH/view?usp=sharing" target="_blank"
-            class="btn"><span>Resume</span>
-            <i class="fas fa-chevron-right"></i>
+        <aside class="decision-console reveal" aria-label="Role transition console">
+          <div class="console__top">
+            <img src="./assets/images/photo.png" alt="Aditya Srivastav" loading="eager">
+            <div>
+              <span>Candidate Signal</span>
+              <strong>Consulting x Data x Product</strong>
+            </div>
+          </div>
+          <div class="console__chart" aria-hidden="true">
+            <span style="--h: 42%"></span>
+            <span style="--h: 70%"></span>
+            <span style="--h: 54%"></span>
+            <span style="--h: 86%"></span>
+            <span style="--h: 63%"></span>
+            <span style="--h: 92%"></span>
+            <span style="--h: 76%"></span>
+          </div>
+          <div class="console__roles">
+            <article>
+              <small>Target 01</small>
+              <strong>Data Analyst</strong>
+              <span>Dashboards, SQL, KPI thinking</span>
+            </article>
+            <article>
+              <small>Target 02</small>
+              <strong>Data Scientist</strong>
+              <span>ML, NLP, computer vision</span>
+            </article>
+            <article>
+              <small>Target 03</small>
+              <strong>Product Manager</strong>
+              <span>Requirements, discovery, impact</span>
+            </article>
+          </div>
+        </aside>
+      </div>
+
+      <div class="section__inner metric-ticker reveal" aria-label="Key proof points">
+        <span><strong>2+</strong> live products</span>
+        <span><strong>80+</strong> ML events logged</span>
+        <span><strong>100+</strong> cloud challenges enabled</span>
+        <span><strong>1.5+</strong> years across consulting, data, and tech</span>
+      </div>
+    </section>
+
+    <section class="thesis section" id="thesis" data-section="thesis">
+      <div class="section__inner editorial-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Transition Thesis</p>
+          <h2>The transition is not a pivot away from consulting. It is a sharper use of it.</h2>
+        </div>
+
+        <div class="thesis-board reveal">
+          <article>
+            <span>Business</span>
+            <h3>I understand the problem before choosing the tool.</h3>
+            <p>Client needs, stakeholder constraints, process gaps, and measurable outcomes come first.</p>
+          </article>
+          <article>
+            <span>Data</span>
+            <h3>I convert messy inputs into useful evidence.</h3>
+            <p>Cleaning, modeling, dashboards, and analysis designed for decision-making instead of decoration.</p>
+          </article>
+          <article>
+            <span>Product</span>
+            <h3>I think in workflows, users, and adoption.</h3>
+            <p>Strong products make the next decision easier for the person using them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" data-section="projects">
+      <div class="section__inner">
+        <div class="section-heading section-heading--row reveal">
+          <div>
+            <p class="eyebrow">Case Studies</p>
+            <h2>Selected work framed as problem, approach, and impact.</h2>
+          </div>
+          <a class="btn btn--secondary" href="./projects/" data-analytics="view-all-projects">
+            <span>Open Archive</span>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
 
-      </div>
-    </div>
-  </section>
-  <!-- about section ends -->
-
-  <!-- skills section starts -->
-  <section class="skills" id="skills">
-
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
-    <div class="container">
-      <div class="row" id="skillsContainer">
-
-        <!-- <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-                <span>AdobeXD</span>
-              </div>
-            </div> -->
-
-      </div>
-    </div>
-  </section>
-  <!-- skills section ends -->
-
-
-  <!-- education section starts -->
-  <section class="education" id="education">
-
-    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-    <div class="box-container">
-
-      <div class="box">
-        <div class="image">
-          <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
-        </div>
-        <div class="content">
-          <h3>Bachelor of Computer Application(Data Science and Artificial Intelligence)</h3>
-          <p>Babu Banarasi Das University | BBDU</p>
-          <h4>2022-September | June 2025</h4>
+        <div class="filter-row reveal" id="projectFilters" aria-label="Project filters"></div>
+        <div class="case-list" id="projectsContainer" aria-live="polite">
+          <p class="loading-copy">Loading projects...</p>
         </div>
       </div>
+    </section>
 
-      <div class="box">
-        <div class="image">
-          <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+    <section class="skills section" id="skills" data-section="skills">
+      <div class="section__inner editorial-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Capability Matrix</p>
+          <h2>Skills grouped by hiring signal, not by tool dump.</h2>
+          <p>Each cluster maps to the work expected in Data Analyst, Data Scientist, Product Analyst, and Product
+            Manager roles.</p>
         </div>
-        <div class="content">
-          <h3>High Secondary | Physics|Chemistry|Biology</h3>
-          <p>Amrit Public School | CBSE</p>
-          <h4>2021-2022</h4>
-        </div>
-      </div>
 
-    </div>
-  </section>
-  <!-- education section ends -->
-
-  <!-- work project section starts -->
-  <section class="work" id="work">
-
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-
-    <div class="box-container">
-
-      <!-- <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            
-          </div>
+        <div class="capability-grid" id="skillsContainer" aria-live="polite">
+          <p class="loading-copy">Loading skills...</p>
         </div>
       </div>
-    </div> -->
+    </section>
 
-    </div>
+    <section class="proof section" id="proof" data-section="proof">
+      <div class="section__inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Proof Log</p>
+          <h2>Signals that support the move into data and product roles.</h2>
+        </div>
+        <div class="proof-log" id="achievementsGrid"></div>
+      </div>
+    </section>
 
-    <div class="viewall">
-      <a href="/projects" class="btn"><span>View All</span>
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
+    <section class="experience section" id="experience" data-section="experience">
+      <div class="section__inner editorial-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Work history rewritten around decisions, delivery, and analytical contribution.</h2>
+        </div>
+        <div class="experience-log" id="experienceTimeline"></div>
+      </div>
+    </section>
 
-  </section>
-  <!-- work project section ends -->
-
-
-  <!-- experience section starts -->
-  <section class="experience" id="experience">
-
-    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
-    <div class="quote">
-      <span>Every experience in your life is being orchestrated to teach you something you need to know to move
-        forward.</span>
-    </div>
-
-    <div class="timeline">
-
-      <!-- Existing experiences, now as placeholders for you to fill in -->
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/prospecta.png" alt="Prospecta Software" />
-          </div>
-          <div class="tag">
-            <h2>Prospecta Software</h2>
-          </div>
-          <div class="desc">
-            <h3>Associate Consultant | Noida</h3>
-            <p>November 2025 - Present</p>
-            <div class="role-description">
-              <ul>
-                <li>Engaged with clients to understand business needs and translate them into clear functional and
-                  technical requirements.</li>
-                <li>Prepared structured project documentation including requirement specifications, process flows,
-                  blueprints and test cases
-                  to ensure smooth delivery.</li>
-                <li>Built and maintained datasets on the MDO platform by configuring business rules, creating workflows
-                  and optimizing data logic for high data quality.</li>
-                <li>Developed DAXE code for data processing and analytical tasks, supporting end-to-end project
-                  life-cycle from
-                  implementation to user acceptance testing.
-                </li>
-              </ul>
+    <section class="education section" id="education" data-section="education">
+      <div class="section__inner editorial-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Computer applications foundation with a Data Science and AI focus.</h2>
+        </div>
+        <div class="education-list reveal">
+          <article class="education-item">
+            <img src="./assets/images/educat/college.jpg" alt="Babu Banarasi Das University campus" loading="lazy">
+            <div>
+              <span>2022 - 2025</span>
+              <h3>Bachelor of Computer Application, Data Science and Artificial Intelligence</h3>
+              <p>Babu Banarasi Das University | BBDU</p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/digi.png" alt="Digipodium Logo" />
-          </div>
-          <div class="tag">
-            <h2>Digipodium</h2>
-          </div>
-          <div class="desc">
-            <h3>Data Science Intern | Industrial Training</h3>
-            <p>February 2025 - May 2025</p>
-            <div class="role-description">
-              <ul>
-                <li>Worked with team members from different domains to solve real problems using data science, helping
-                  improve decisionmaking through easy-to-understand visuals.</li>
-                <li>Developed and deployed a real-time driver monitoring system using CNN, enabling automated alerts and
-                  logging over 80+ distraction events.</li>
-                <li>Analyzed diverse datasets to extract actionable insights, cleaned and transformed raw data using
-                  Python for model training and evolution.</li>
-                <li>Collaborated with the Machine Learning team to improve model performance by tuning hyperparameters
-                  and validating results using cross-validation techniques.</li>
-              </ul>
+          </article>
+          <article class="education-item">
+            <img src="./assets/images/educat/school.jpg" alt="Amrit Public School" loading="lazy">
+            <div>
+              <span>2021 - 2022</span>
+              <h3>Higher Secondary, Physics, Chemistry and Biology</h3>
+              <p>Amrit Public School | CBSE</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" alt="AWS Logo" />
-          </div>
-          <div class="tag">
-            <h2>AWS (Amazon Web Service)</h2>
-          </div>
-          <div class="desc">
-            <h3>Community Builder (AI Engineering) | Volunteering</h3>
-            <p>March 2025 - Ongoing</p>
-            <p class="role-description">Your description here.</p>
+    <section class="contact section" id="contact" data-section="contact">
+      <div class="section__inner contact__grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something measurable.</h2>
+          <p>
+            I am open to Data Analyst, Data Scientist, Product Analyst, and Product Manager opportunities where business
+            context and analytical depth both matter.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:adityasrivastav729@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>
+              adityasrivastav729@gmail.com</a>
+            <a href="https://www.linkedin.com/in/adityasrivastav1/" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+            <a href="https://github.com/AdityaSrivastavDS" target="_blank" rel="noopener"><i class="fab fa-github"
+                aria-hidden="true"></i> GitHub</a>
           </div>
         </div>
-      </div>
 
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="https://img.icons8.com/?size=100&id=22989&format=png&color=000000" alt="Microsoft Logo" />
-          </div>
-          <div class="tag">
-            <h2>Microsoft</h2>
-          </div>
-          <div class="desc">
-            <h3>Student Ambassador | Volunteering</h3>
-            <p>October 2023 - February 2025</p>
-            <p class="role-description">
-            <ul class="role-description">
-              <li>Built a strong tech community, fostering collaboration and networking among students, professionals,
-                and industry experts.</li>
-              <li>Acted as a bridge between students and Microsoft, introducing them to learning resources,
-                certifications, and industry trends.</li>
-              <li>Led three collaborative projects, showcasing real-world applications of Microsoft technologies. These
-                projects gained industry recognition and were adopted by experts.</li>
-              <li>Worked with over 3,000 student ambassadors globally, guiding them in technology, career development,
-                and hands-on learning.</li>
-              <li>Organized 10+ hackathons, providing students with opportunities to solve real-world challenges and
-                improve their problem-solving skills.</li>
-              <li>Conducted 100+ cloud skill challenges, helping students gain hands-on experience with cloud computing
-                and Microsoft technologies.</li>
-              <li>Hosted 50+ technical workshops, covering topics like AI, data science, and cloud computing etc.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/headstarter.png" alt="Headstarter AI Logo" />
-          </div>
-          <div class="tag">
-            <h2>Headstarter AI</h2>
-          </div>
-          <div class="desc">
-            <h3>Software Engineer Fellow</h3>
-            <p>April 2024 - September 2024</p>
-            <p class="role-description">
-            <ul class="role-description">
-              <li>Worked with different teams to add new features, making product launches 15% faster and boosting user
-                engagement by 35%.</li>
-              <li>Built scalable software, improving system performance by 25% and cutting load times by 30%.</li>
-              <li>Reviewed code and maintained coding standards, reducing system errors and ensuring best practices.
-              </li>
-              <li>Developed a Market Trends dashboard, helping businesses analyze sales data with clear insights and
-                visuals.</li>
-              <li>Created "Pantry Tracker," an AI-powered inventory management system to track and manage stock
-                efficiently.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="https://img.icons8.com/?size=100&id=69455&format=png&color=000000" alt="HP Logo" />
-          </div>
-          <div class="tag">
-            <h2>HP</h2>
-          </div>
-          <div class="desc">
-            <h3>Corporate Venture Capital & Business Analytics Intern | Internship</h3>
-            <p>May 2024 - July 2024</p>
-            <p class="role-description">
-            <ul class="role-description">
-              <li>Researched market trends to identify three promising tech ventures, leading to a 15% increase in
-                potential investments.</li>
-              <li>Created financial models and projections for start-ups, improving financial forecasting accuracy by
-                20%.</li>
-              <li>Worked with different teams to evaluate new tech start-ups, successfully selecting five for further
-                review.</li>
-              <li>Presented insights and recommendations to senior management, helping them make informed decisions and
-                secure approval for two new investments.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/peroptyx.png" alt="Peroptyx Logo" />
-          </div>
-          <div class="tag">
-            <h2>Peroptyx</h2>
-          </div>
-          <div class="desc">
-            <h3>Data Analyst | Full-Time</h3>
-            <p>March 2024 - March 2024</p>
-            <p class="role-description">
-            <ul class="role-description">
-              <li>Reviewed geographic data to ensure maps were accurate, complete, and met quality standards, improving
-                data reliability by 15%.</li>
-              <li>Analyzed spatial data to identify trends and inconsistencies, providing insights to enhance map
-                performance and user experience.</li>
-              <li>Streamlined data validation workflows, reducing processing time by 20% and making reviews more
-                efficient.</li>
-              <li>Worked with GIS specialists and developers to implement enhancements that improved map accuracy and
-                usability.</li>
-              <li>Contributed to the successful launch of updated maps, increasing navigation accuracy and user
-                satisfaction by 12%.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container left">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/mahir.png" alt="Mahir Insight Institute Logo" />
-          </div>
-          <div class="tag">
-            <h2>Mahir Insight Institute</h2>
-          </div>
-          <div class="desc">
-            <h3>Founder | Full-Time</h3>
-            <p>September 2022 - Present</p>
-            <p class="role-description">Your description here.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/digitmg.png" alt="360DigiTMG Logo" />
-          </div>
-          <div class="tag">
-            <h2>360DigiTMG</h2>
-          </div>
-          <div class="desc">
-            <h3>Data Science Trainee | Apprenticeship</h3>
-            <p>October 2023 - November 2023</p>
-            <p class="role-description">
-            <ul class="role-description">
-              <li>Worked with different teams to identify key business challenges and applied data science solutions,
-                resulting in a 25% increase in cost savings.</li>
-              <li>Assisted in deploying machine learning models, ensuring smooth integration with existing systems and
-                reducing deployment time by 40%.</li>
-              <li>Designed data visualizations that improved data understanding, speeding up decision-making by 8%.</li>
-              <li>Performed data cleaning and preprocessing, leading to a 4% improvement in data quality and accuracy.
-              </li>
-              <li>Built a predictive model using machine learning to estimate survival chances in the Titanic shipwreck.
-              </li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container right">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/ms.png" alt="Morgan Stanley Logo" />
-          </div>
-          <div class="tag">
-            <h2>Morgan Stanley</h2>
-          </div>
-          <div class="desc">
-            <h3>Trainee | Traineeship</h3>
-            <p>November 2022 - February 2023</p>
-            <p class="role-description">
-            <ul class="role-description">
-              <li>Collaborated with cross-functional teams to support the design and execution of data-driven solutions
-                for internal business challenges.</li>
-              <li>Assisted in the development and debugging of Python scripts and SQL queries to streamline reporting
-                and analytics.</li>
-              <li>Conducted detailed testing and documentation of financial models, ensuring accuracy and compliance
-                with regulatory standards.</li>
-              <li>Participated in daily stand-ups and knowledge-sharing sessions, gaining exposure to real-time risk
-                analysis and capital market operations.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container left">
-        <div class="content">
-          <div class="company-logo">
-            <img src="../assets/images/hactober.png" alt="Hacktoberfest 2022 Logo" />
-          </div>
-          <div class="tag">
-            <h2>Hacktoberfest 2022</h2>
-          </div>
-          <div class="desc">
-            <h3>Contributor | Open Source Program</h3>
-            <p>October 2022 - November 2022</p>
-            <p class="role-description">
-            <ul class="role-description">
-              <li>Contributed to open-source projects by submitting meaningful pull requests focused on bug fixes,
-                documentation improvements, and feature enhancements.</li>
-              <li>Collaborated with global developer communities, gaining hands-on experience with Git, GitHub
-                workflows, and version control best practices.</li>
-              <li>Participated in code reviews and issue discussions, strengthening understanding of collaborative
-                software development and agile contribution dynamics.</li>
-              <li>Successfully met Hacktoberfest challenge criteria by engaging with diverse repositories and
-                demonstrating a proactive learning mindset.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="morebtn">
-        <a href="/#experience" class="btn">
-          <i class="fas fa-arrow-left"></i>
-          <span>Back to Home</span>
-        </a>
-      </div>
-
-    </div>
-  </section>
-  <!-- experience section ends -->
-
-  <!-- contact section starts -->
-  <section class="contact" id="contact">
-
-    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-    <div class="container">
-      <div class="content">
-        <div class="image-box">
-          <img draggable="false" src="./assets/images/contact1.png" alt="">
-        </div>
-        <form id="contact-form">
-
-          <div class="form-group">
-            <div class="field">
-              <input type="text" name="name" placeholder="Name" required>
-              <i class='fas fa-user'></i>
-            </div>
-            <div class="field">
-              <input type="text" name="email" placeholder="Email" required>
-              <i class='fas fa-envelope'></i>
-            </div>
-            <div class="field">
-              <input type="text" name="phone" placeholder="Phone">
-              <i class='fas fa-phone-alt'></i>
-            </div>
-            <div class="message">
-              <textarea placeholder="Message" name="message" required></textarea>
-              <i class="fas fa-comment-dots"></i>
-            </div>
-          </div>
-          <div class="button-area">
-            <button type="submit">
-              Submit <i class="fa fa-paper-plane"></i></button>
-          </div>
+        <form class="contact-form reveal" id="contact-form" data-analytics="contact-form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Role or company</span>
+            <input type="text" name="phone" autocomplete="organization">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
-    </div>
-  </section>
-  <!-- contact section ends -->
+    </section>
+  </main>
 
-
-  <!-- footer section starts -->
-  <section class="footer">
-
-    <div class="box-container">
-
-      <div class="box">
-        <h3>Aditya's Portfolio</h3>
-        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
-          🚀. Connect with me over live chat!</p>
+  <footer class="site-footer">
+    <div class="section__inner footer__grid">
+      <div>
+        <a class="brand brand--footer" href="#home">
+          <span class="brand__mark">AS</span>
+          <span class="brand__text">
+            <strong>Aditya Srivastav</strong>
+            <small>Decision Intelligence Portfolio</small>
+          </span>
+        </a>
+        <p>Associate Consultant moving toward analytics, data science, and product roles.</p>
       </div>
-
-      <div class="box">
-        <h3>quick links</h3>
-        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      <div class="footer__links" aria-label="Footer navigation">
+        <a href="#projects">Case Studies</a>
+        <a href="#skills">Capabilities</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </div>
-
-      <div class="box">
-        <h3>contact info</h3>
-        <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
-        <p> <i class="fas fa-envelope"></i>adityasrivastav729.com</p>
-        <p> <i class="fas fa-map-marked-alt"></i>Lucknow, India-226028</p>
-        <div class="share">
-
-          <a href="https://www.linkedin.com/in/adityasrivastav1/" class="fab fa-linkedin" aria-label="LinkedIn"
-            target="_blank"></a>
-          <a href="https://github.com/AdityaSrivastavDS" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-          <a href="mailto:adityasrivastav729@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-        </div>
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/adityasrivastav1/" target="_blank" rel="noopener"
+          aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://github.com/AdityaSrivastavDS" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="mailto:adityasrivastav729@gmail.com" aria-label="Email"><i class="fas fa-envelope"
+            aria-hidden="true"></i></a>
       </div>
     </div>
+  </footer>
 
-    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
-        href="https://www.linkedin.com/in/adityasrivastav1/"> Aditya Srivastav</a></h1>
+  <a href="#home" class="scroll-top" id="scroll-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
 
-  </section>
-  <!-- footer section ends -->
-
-
-  <!-- scroll top btn -->
-  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-  <!-- scroll back to top -->
-
-
-  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-  <!-- jquery cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- typed.js cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
-    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- particle.js links -->
-  <script src="./assets/js/particles.min.js"></script>
-  <script src="./assets/js/app.js"></script>
-
-  <!-- vanilla tilt.js links -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
-    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- scroll reveal anim -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-  <script src="./assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script type="module" src="assets/js/three-bg.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+  <script defer src="./assets/js/interactive.js"></script>
 </body>
 
 </html>

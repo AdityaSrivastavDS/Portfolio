@@ -1,137 +1,172 @@
-$(document).ready(function () {
+const qs = (selector, scope = document) => scope.querySelector(selector);
+const qsa = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
+const filters = [
+  { label: "All Projects", value: "all" },
+  { label: "Data & BI", value: "data" },
+  { label: "ML / AI", value: "ml" },
+  { label: "Product Builds", value: "product" },
+  { label: "Learning Systems", value: "learning" }
+];
+
+function initNavigation() {
+  const header = qs("#site-header");
+  const menuButton = qs("#menu-toggle");
+  const nav = qs("#site-nav");
+  const scrollTop = qs("#scroll-top");
+
+  const syncScrollState = () => {
+    header?.classList.toggle("is-scrolled", window.scrollY > 24);
+    scrollTop?.classList.toggle("is-visible", window.scrollY > 520);
+  };
+
+  menuButton?.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  });
+
+  qsa(".site-nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav?.classList.remove("is-open");
+      menuButton?.setAttribute("aria-expanded", "false");
     });
+  });
 
-    $(window).on('scroll load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
-
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
-        } else {
-            document.querySelector('#scroll-top').classList.remove('active');
-        }
-    });
-});
-
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Aditya Srivastav";
-            $("#favicon").attr("href", "/assets/images/favicon.png");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "/assets/images/favhand.png");
-        }
-    });
-
-
-// fetch projects start
-function getProjects() {
-    return fetch("projects.json")
-        .then(response => response.json())
-        .then(data => {
-            return data
-        });
+  window.addEventListener("scroll", syncScrollState, { passive: true });
+  syncScrollState();
 }
 
+function initThemeToggle() {
+  return;
+}
 
-function showProjects(projects) {
-    let projectsContainer = document.querySelector(".work .box-container");
-    let projectsHTML = "";
-    projects.forEach(project => {
-        projectsHTML += `
-        <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
+function initCursor() {
+  return;
+}
+
+function initReveal() {
+  const items = qsa(".reveal");
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    items.forEach((item) => item.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+
+  items.forEach((item) => observer.observe(item));
+}
+
+async function getProjects() {
+  const response = await fetch("./projects.json", { cache: "no-store" });
+  if (!response.ok) throw new Error("Unable to load project data");
+  return response.json();
+}
+
+function projectImage(project) {
+  return `../assets/images/projects/${project.image}.png`;
+}
+
+function linkOrDisabled(href, label, iconClass) {
+  if (!href) {
+    return `<span class="icon-link is-disabled" aria-disabled="true"><i class="${iconClass}" aria-hidden="true"></i>${label}</span>`;
+  }
+  return `<a class="icon-link" href="${href}" target="_blank" rel="noopener"><i class="${iconClass}" aria-hidden="true"></i>${label}</a>`;
+}
+
+function normalizedFocus(project) {
+  const focus = new Set(project.focus || []);
+  if (project.category === "Learning Resource") focus.add("learning");
+  return focus;
+}
+
+function renderFilters(projects) {
+  const container = qs("#allProjectFilters");
+  if (!container) return;
+
+  container.innerHTML = filters.map((filter, index) => `
+    <button class="filter-button ${index === 0 ? "is-active" : ""}" type="button" data-filter="${filter.value}">
+      ${filter.label}
+    </button>
+  `).join("");
+
+  container.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-filter]");
+    if (!button) return;
+    qsa(".filter-button", container).forEach((item) => item.classList.remove("is-active"));
+    button.classList.add("is-active");
+    renderProjects(projects, button.dataset.filter);
+  });
+}
+
+function renderProjects(projects, filter = "all") {
+  const container = qs("#allProjectsGrid");
+  if (!container) return;
+
+  const selected = filter === "all"
+    ? projects
+    : projects.filter((project) => normalizedFocus(project).has(filter));
+
+  container.innerHTML = selected.map((project) => `
+    <article class="case-card reveal">
+      <div class="case-card__image">
+        <img src="${projectImage(project)}" alt="${project.name} preview" loading="lazy">
+      </div>
+      <div class="case-card__body">
+        <div class="case-card__meta">
+          <span>${project.role || project.category}</span>
         </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
+        <h3>${project.name}</h3>
+        <p class="project-summary">${project.summary || project.desc || ""}</p>
+        <div class="impact-map">
+          <div><strong>Problem</strong><span>${project.problem}</span></div>
+          <div><strong>Approach</strong><span>${project.approach}</span></div>
+          <div><strong>Impact</strong><span>${project.impact}</span></div>
+        </div>
+        <div class="project-tags">
+          ${(project.stack || []).map((tag) => `<span class="project-tag">${tag}</span>`).join("")}
+        </div>
+        <div class="project-links">
+          ${linkOrDisabled(project.links?.view, "Live", "fas fa-external-link-alt")}
+          ${linkOrDisabled(project.links?.code, "Code", "fas fa-code")}
         </div>
       </div>
-    </div>
-    </div>`
-    });
-    projectsContainer.innerHTML = projectsHTML;
+    </article>
+  `).join("") || `<p class="loading-copy">No projects match this filter yet.</p>`;
 
-    // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
-    // // vanilla tilt.js  
-
-    // /* ===== SCROLL REVEAL ANIMATION ===== */
-    // const srtop = ScrollReveal({
-    //     origin: 'bottom',
-    //     distance: '80px',
-    //     duration: 1000,
-    //     reset: true
-    // });
-
-    // /* SCROLL PROJECTS */
-    // srtop.reveal('.work .box', { interval: 200 });
-
-    // isotope filter products
-    var $grid = $('.box-container').isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'fitRows',
-        masonry: {
-            columnWidth: 200
-        }
-    });
-
-    // filter items on button click
-    $('.button-group').on('click', 'button', function () {
-        $('.button-group').find('.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-    });
+  initReveal();
 }
 
-getProjects().then(data => {
-    showProjects(data);
-})
-// fetch projects end
+document.addEventListener("visibilitychange", () => {
+  const favicon = qs("#favicon");
+  if (document.visibilityState === "visible") {
+    document.title = "Projects | Aditya Srivastav";
+    favicon?.setAttribute("href", "../assets/images/favicon.png");
+  } else {
+    document.title = "Aditya Srivastav | Project Archive";
+    favicon?.setAttribute("href", "../assets/images/favhand.png");
+  }
+});
 
-// Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
-// End of Tawk.to Live Chat
+document.addEventListener("DOMContentLoaded", async () => {
+  initNavigation();
+  initThemeToggle();
+  initCursor();
+  initReveal();
 
-// disable developer mode
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-    }
-}
+  try {
+    const projects = await getProjects();
+    renderFilters(projects);
+    renderProjects(projects);
+  } catch (error) {
+    console.error(error);
+    qs("#allProjectsGrid").innerHTML = `<p class="loading-copy">Project data could not load. Please try again later.</p>`;
+  }
+});

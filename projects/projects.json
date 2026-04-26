@@ -1,9 +1,16 @@
 [
   {
     "name": "PoseGuard",
-    "desc": "Real-time driver monitoring system that detects distracted or unsafe driver postures. ",
+    "role": "ML / Computer Vision",
+    "category": "Machine Learning",
+    "summary": "Real-time driver monitoring system that detects distracted or unsafe driving posture.",
+    "desc": "Real-time driver monitoring system that detects distracted or unsafe driver postures.",
+    "problem": "Driver distraction needs faster, more consistent detection than manual review can provide.",
+    "approach": "Built a Python computer-vision pipeline using OpenCV and CNN workflows to detect posture and distraction signals.",
+    "impact": "Created an alert-ready monitoring flow and logged 80+ distraction events during testing.",
+    "stack": ["Python", "OpenCV", "CNN", "TensorFlow", "Computer Vision"],
     "image": "poseguard",
-    "category": "Data-Science-And-Analytics",
+    "focus": ["featured", "ml", "data"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/PoseGuard"
@@ -11,80 +18,152 @@
   },
   {
     "name": "Amazon Product Reviews Sentiment Analyzer",
-    "desc": "Sentiment analysis tool to classify reviews as positive, negative, or neutral, and provides a visual representation of the sentiment distribution.",
+    "role": "NLP / Product Analytics",
+    "category": "Data Science",
+    "summary": "A deployed sentiment analysis app that classifies reviews and visualizes customer opinion patterns.",
+    "desc": "Sentiment analysis tool to classify reviews as positive, negative, or neutral, and provide a visual representation of the sentiment distribution.",
+    "problem": "Product teams need a faster way to understand review sentiment without reading every comment manually.",
+    "approach": "Created an NLP workflow with a web interface for classification, sentiment distribution, and review interpretation.",
+    "impact": "Shipped a live tool that turns unstructured customer feedback into easier decision support.",
+    "stack": ["Python", "NLP", "Flask", "Pandas", "Visualization"],
     "image": "analysis_web",
-    "category": "Web-Development",
+    "focus": ["featured", "ml", "data", "product"],
     "links": {
       "view": "https://amazon-review-sentiment-analyzer-web-app.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Amazon-Sentiment-Analysis-Review-Web-App"
     }
   },
-
-  {
-    "name": "AI Voice Assistant",
-    "desc": "Mihir A.I, a Python-based voice assistant that leverages Google Cloud Speech-to-Text for precise command interpretation and OpenAI's GPT-3 for intelligent responses.",
-    "image": "Mihir_Bot",
-    "category": "Data-Science-And-Analytics",
-    "links": {
-      "view": "",
-      "code": "https://github.com/AdityaSrivastavDS/AI-Voice-Assistant"
-    }
-  },
-  {
-    "name": "Mental Sentiment Analysis",
-    "desc": "Analysis aimed at identifying and categorizing various mental health conditions based on user statements. ",
-    "image": "mental",
-    "category": "Data-Science-And-Analytics",
-    "links": {
-      "view": "",
-      "code": "https://github.com/AdityaSrivastavDS/Mental-Health-Sentiment-Analysis"
-    }
-  },
   {
     "name": "Ecommerce Sales Dashboard",
+    "role": "BI Dashboard",
+    "category": "Analytics",
+    "summary": "Interactive sales dashboard for monitoring performance, customer behavior, and business KPIs.",
     "desc": "The dashboard provides comprehensive insights into sales performance, customer behavior, and other key metrics to help drive business decisions.",
+    "problem": "Sales performance data becomes difficult to act on when metrics are scattered across sources.",
+    "approach": "Designed a dashboard view around sales KPIs, customer behavior, and performance comparisons.",
+    "impact": "Improved decision readiness by turning sales data into a clear executive-style dashboard.",
+    "stack": ["Power BI", "Excel", "Data Modeling", "KPI Design", "Dashboarding"],
     "image": "dashboard",
-    "category": "Data-Science-And-Analytics",
+    "focus": ["featured", "data", "product"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Madhav-Ecommerce-Sales-Dashboard"
     }
   },
   {
-    "name": "Rubik Cube",
-    "desc": "It allows users to interact with a 3x3x3 Rubik Cube, track their solving time, and keep records of their solving statistics.",
-    "image": "cube",
-    "category": "Web-Development",
+    "name": "Mental Health Sentiment Analysis",
+    "role": "NLP / Responsible AI",
+    "category": "Data Science",
+    "summary": "Text analysis project for categorizing mental-health-related statements into meaningful sentiment groups.",
+    "desc": "Analysis aimed at identifying and categorizing various mental health conditions based on user statements.",
+    "problem": "Mental-health statements require careful text classification to surface patterns responsibly.",
+    "approach": "Cleaned text data, engineered features, and evaluated NLP classification approaches.",
+    "impact": "Built a structured analysis flow for transforming raw statements into interpretable categories.",
+    "stack": ["Python", "NLP", "Pandas", "Scikit-learn", "Data Cleaning"],
+    "image": "mental",
+    "focus": ["featured", "ml", "data"],
     "links": {
-      "view": "https://rubikcubes.netlify.app/",
-      "code": "https://github.com/AdityaSrivastavDS/Rubik-s-Cube"
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Mental-Health-Sentiment-Analysis"
     }
   },
   {
-    "name": "Stick Hero Game",
-    "desc": "The game involves extending a stick to reach the platforms and land safely to score points.",
-    "image": "game",
-    "category": "Web-Development",
+    "name": "Multilingual Chatbot Ticket Booking System",
+    "role": "AI Product Prototype",
+    "category": "Web Development",
+    "summary": "A multilingual chatbot ticket-booking platform with booking flows, 3D museum viewing, and web support.",
+    "desc": "A Multilingual Chatbot Ticket Booking System enabling ticket reservations, 3D museum model viewing, chatbot assistance, and multi-language web interface support.",
+    "problem": "Visitors need a simpler booking experience that handles language friction and guided assistance.",
+    "approach": "Built a multilingual web product with chatbot support, ticket-booking flow, and 3D museum interaction.",
+    "impact": "Deployed a live product prototype that combines accessibility, automation, and immersive browsing.",
+    "stack": ["JavaScript", "Chatbot", "Three.js", "Web App", "Product UX"],
+    "image": "homepage",
+    "focus": ["featured", "product", "ml"],
     "links": {
-      "view": "https://stickherogames.netlify.app/",
-      "code": "https://github.com/AdityaSrivastavDS/Stick-Hero-Game"
+      "view": "https://museumhub.onrender.com/",
+      "code": "https://github.com/AdityaSrivastavDS/Multilingual-Chatbot-Ticket-Booking-System"
+    }
+  },
+  {
+    "name": "Cricket Best 11 Analysis Dashboard",
+    "role": "Sports Analytics / BI",
+    "category": "Analytics",
+    "summary": "Power BI dashboard for comparing players and selecting an optimized cricket playing eleven.",
+    "desc": "Cricket Best 11 Analysis Dashboard, a Power BI-based interactive platform designed to help you analyze and select the best playing 11 for cricket teams.",
+    "problem": "Team selection requires comparing multiple performance dimensions quickly and fairly.",
+    "approach": "Modeled player metrics in Power BI and designed interactive views for role-based comparison.",
+    "impact": "Created a decision-support dashboard for faster, more transparent playing-eleven selection.",
+    "stack": ["Power BI", "Data Modeling", "Sports Analytics", "DAX", "Dashboarding"],
+    "image": "cric",
+    "focus": ["featured", "data", "product"],
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/Cricket-Best-11-Analysis-Dashboard"
+    }
+  },
+  {
+    "name": "AI Voice Assistant",
+    "role": "AI Assistant",
+    "category": "AI & Automation",
+    "summary": "Python-based voice assistant integrating speech recognition and intelligent response generation.",
+    "desc": "Mihir A.I, a Python-based voice assistant that leverages Google Cloud Speech-to-Text for precise command interpretation and OpenAI's GPT-3 for intelligent responses.",
+    "problem": "Users need a hands-free way to trigger tasks and receive contextual answers.",
+    "approach": "Integrated speech-to-text, command interpretation, and AI response generation in Python.",
+    "impact": "Created an assistant prototype that demonstrates applied AI interaction design.",
+    "stack": ["Python", "Google Cloud", "Speech-to-Text", "AI", "Automation"],
+    "image": "Mihir_Bot",
+    "focus": ["ml", "product"],
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/AI-Voice-Assistant"
     }
   },
   {
     "name": "Ball Tracker",
+    "role": "Computer Vision",
+    "category": "Machine Learning",
+    "summary": "Video analytics project that tracks colored balls, records quadrant events, and generates processed output.",
     "desc": "This project involves tracking balls of different colors in a video, recording their entry events into different quadrants, and generating an output video.",
+    "problem": "Manual video review is inefficient for tracking movement and event-entry patterns.",
+    "approach": "Used color tracking, quadrant logic, event logging, and processed-video output generation.",
+    "impact": "Automated a visual analytics workflow that records events directly from video streams.",
+    "stack": ["Python", "OpenCV", "Video Analytics", "Event Logging"],
     "image": "ball",
-    "category": "Data-Science-And-Analytics",
+    "focus": ["ml", "data"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/SecqurAIse-Technologies-Project"
     }
   },
   {
+    "name": "AI Augmented Design Feedback System",
+    "role": "AI / Design Intelligence",
+    "category": "AI & Automation",
+    "summary": "AI-assisted feedback system concept for improving mechanical design review and iteration.",
+    "desc": "The AI-Augmented Design Feedback System is an innovative solution aimed at enhancing mechanical design processes.",
+    "problem": "Mechanical design feedback can be slow, inconsistent, and hard to operationalize.",
+    "approach": "Explored AI-assisted feedback loops to support design review and decision quality.",
+    "impact": "Produced a practical concept for improving iteration speed and review clarity.",
+    "stack": ["AI", "Python", "Design Feedback", "Product Thinking"],
+    "image": "ai",
+    "focus": ["ml", "product"],
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System"
+    }
+  },
+  {
     "name": "Python Complete Guide",
-    "desc": " Welcome to the Python Complete Guide repository. This repository contains a comprehensive collection of Python tutorials and implementations.",
+    "role": "Learning System",
+    "category": "Learning Resources",
+    "summary": "Structured Python learning repository with tutorials, examples, and implementation references.",
+    "desc": "Welcome to the Python Complete Guide repository. This repository contains a comprehensive collection of Python tutorials and implementations.",
+    "problem": "Learners need a single organized path for Python fundamentals and implementation examples.",
+    "approach": "Curated topic-based tutorials and code references into a searchable repository.",
+    "impact": "Created a reusable learning asset for Python and analytics foundations.",
+    "stack": ["Python", "Documentation", "Examples", "Teaching"],
     "image": "python_guide",
-    "category": "Data-Science-And-Analytics",
+    "focus": ["data"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Python-Complete-Guide"
@@ -92,9 +171,16 @@
   },
   {
     "name": "Data Science Complete Guide",
+    "role": "Learning System",
+    "category": "Learning Resources",
+    "summary": "Repository of data science concepts, examples, and practical learning resources.",
     "desc": "Welcome to the Data Science Guide Repository! This repository contains comprehensive resources and examples to help you learn Data Science concepts.",
+    "problem": "Data science learners often struggle with scattered concepts and disconnected examples.",
+    "approach": "Organized core concepts, code examples, and references into a guided repository.",
+    "impact": "Built a reusable knowledge base for strengthening applied data science foundations.",
+    "stack": ["Data Science", "Python", "Machine Learning", "Documentation"],
     "image": "data_science_guide",
-    "category": "Data-Science-And-Analytics",
+    "focus": ["data", "ml"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Data-Science-Guide"
@@ -102,68 +188,87 @@
   },
   {
     "name": "Hospital Management System",
+    "role": "Database Application",
+    "category": "Web Development",
+    "summary": "Java and MySQL system for streamlining hospital administration and patient-management workflows.",
     "desc": "Implemented a comprehensive hospital management system using Java and MySQL, streamlining administrative tasks and enhancing patient care.",
+    "problem": "Hospital operations need structured records and simpler administrative workflows.",
+    "approach": "Built a Java and MySQL application for core hospital management tasks.",
+    "impact": "Demonstrated database-backed workflow design for operational efficiency.",
+    "stack": ["Java", "MySQL", "OOP", "Database Design"],
     "image": "hm",
-    "category": "Java",
+    "focus": ["product"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Hospital-Management-System"
     }
   },
   {
+    "name": "Rubik Cube",
+    "role": "Interactive Web App",
+    "category": "Web Development",
+    "summary": "Interactive 3x3x3 Rubik Cube experience with timer and solving-stat tracking.",
+    "desc": "It allows users to interact with a 3x3x3 Rubik Cube, track their solving time, and keep records of their solving statistics.",
+    "problem": "Puzzle users need a simple web-based way to practice and measure solving progress.",
+    "approach": "Built an interactive browser experience with controls, timing, and stats.",
+    "impact": "Shipped a live web app with clear feedback loops for repeat use.",
+    "stack": ["JavaScript", "Web App", "Interaction Design", "Netlify"],
+    "image": "cube",
+    "focus": ["product"],
+    "links": {
+      "view": "https://rubikcubes.netlify.app/",
+      "code": "https://github.com/AdityaSrivastavDS/Rubik-s-Cube"
+    }
+  },
+  {
+    "name": "Stick Hero Game",
+    "role": "Interactive Web Game",
+    "category": "Web Development",
+    "summary": "Browser game that rewards timing, distance judgment, and quick retry interaction loops.",
+    "desc": "The game involves extending a stick to reach the platforms and land safely to score points.",
+    "problem": "Simple web games need responsive controls and clear feedback to feel satisfying.",
+    "approach": "Implemented game mechanics, scoring, and interaction states in the browser.",
+    "impact": "Deployed a lightweight game that demonstrates frontend interaction polish.",
+    "stack": ["JavaScript", "Game Logic", "Canvas", "Netlify"],
+    "image": "game",
+    "focus": ["product"],
+    "links": {
+      "view": "https://stickherogames.netlify.app/",
+      "code": "https://github.com/AdityaSrivastavDS/Stick-Hero-Game"
+    }
+  },
+  {
     "name": "Java Complete Guide",
+    "role": "Learning System",
+    "category": "Learning Resources",
+    "summary": "Structured Java repository covering fundamentals through advanced programming examples.",
     "desc": "Welcome to the Java Complete Guide Repository! This repository contains comprehensive resources and examples to help you learn Java programming from the basics to advanced topics.",
+    "problem": "Java learners need clear examples organized from fundamentals to deeper concepts.",
+    "approach": "Created a repository of guided examples, explanations, and reference implementations.",
+    "impact": "Built a durable learning resource for programming and software fundamentals.",
+    "stack": ["Java", "OOP", "Documentation", "Examples"],
     "image": "java_guide",
-    "category": "Java",
+    "focus": ["product"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Java-Complete-Guide"
     }
   },
-  
-
   {
     "name": "Neural Net ASM",
+    "role": "Low-level ML Exploration",
+    "category": "Machine Learning",
+    "summary": "Experimental machine-learning library concepts implemented at a low level in Assembly.",
     "desc": "This project aims to create a custom machine learning library implemented in Assembly language. The library focuses on neural networks and kernel functions.",
+    "problem": "Understanding ML internals requires looking below high-level frameworks.",
+    "approach": "Explored neural-network and kernel concepts through low-level implementation.",
+    "impact": "Strengthened model-mechanics understanding by moving closer to computational primitives.",
+    "stack": ["Assembly", "Neural Networks", "Algorithms", "ML Internals"],
     "image": "asm",
-    "category": "Data-Science-And-Analytics",
+    "focus": ["ml"],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Neural-NET-ASM"
     }
-  },
-
-  {
-    "name": "Multilingual Chatbot Integrated Ticket Booking System",
-    "desc": "A Multilingual Chatbot Ticket Booking System enabling ticket reservations, 3D museum model viewing, chatbot assistance, and multi-language web interface support.",
-    "image": "homepage",
-    "category": "Web-Development",
-    "links": {
-      "view": "https://museumhub.onrender.com/",
-      "code": "https://github.com/AdityaSrivastavDS/Multilingual-Chatbot-Ticket-Booking-System"
-    }
-  },
-
-  {
-    "name": "AI Augmented Design Feedback System",
-    "desc": "The AI-Augmented Design Feedback System is an innovative solution aimed at enhancing mechanical design processes.",
-    "image": "ai",
-    "category": "Data-Science-And-Analytics",
-    "links": {
-      "view": "",
-      "code": "https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System"
-    }
-  },
-
-  {
-    "name": "Cricket Best 11 Analysis Dashboard",
-    "desc": "Cricket Best 11 Analysis Dashboard, a Power BI-based interactive platform designed to help you analyze and select the best playing 11 for cricket teams.",
-    "image": "cric",
-    "category": "Data-Science-And-Analytics",
-    "links": {
-      "view": "",
-      "code": "https://github.com/AdityaSrivastavDS/Cricket-Best-11-Analysis-Dashboard"
-    }
   }
-  
 ]

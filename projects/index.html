@@ -1,102 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
-    <title>Projects | Portfolio Aditya Srivastav</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description"
+    content="Project archive for Aditya Srivastav's decision-intelligence portfolio, covering analytics, ML, BI, and product builds.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link id="favicon" rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-png">
+  <title>Project Archive | Aditya Srivastav</title>
 </head>
-<body oncontextmenu="return false">
 
+<body>
+  <a class="skip-link" href="#projects-main">Skip to projects</a>
 
+  <header class="site-header" id="site-header">
+    <a class="brand" href="../#home">
+      <span class="brand__mark">AS</span>
+      <span class="brand__text">
+        <strong>Aditya Srivastav</strong>
+        <small>Project Archive</small>
+      </span>
+    </a>
 
- 
-<!-- navbar starts -->
-<header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Aditya</a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="../#home">Home</a>
+      <a href="../#thesis">Thesis</a>
+      <a class="active" href="./">Case Studies</a>
+      <a href="../#skills">Capabilities</a>
+      <a href="../#proof">Proof</a>
+      <a href="../#experience">Experience</a>
+      <a href="../#contact">Contact</a>
+    </nav>
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a class="active" href="/#work">Work</a></li>
-            <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
+    <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open menu"
+      aria-expanded="false" aria-controls="site-nav">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+  </header>
 
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-  
-  <div id="filters" class="button-group">
-    <button class="btn is-checked" data-filter="*">All Projects</button>
-    <button class="btn" data-filter=".Data-Science-And-Analytics">Data Science and Analytics</button>
-    <button class="btn" data-filter=".Web-Development">Web Development</button>
-    <button class="btn" data-filter=".Java">Java</button>
-  </div>
-
-  <div class="box-container">
-
-    <!-- <div class="box tilt">
-      <img src="/assets/images/projects/agecalc.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
+  <main id="projects-main">
+    <section class="subpage-hero section">
+      <div class="section__inner subpage-hero__grid reveal">
+        <div>
+          <p class="eyebrow">Project Archive</p>
+          <h1>All case studies, organized by the decision they support.</h1>
+          <p>
+            This archive expands the selected homepage projects into a broader view of analytics, ML, dashboard,
+            product, and learning-system work.
+          </p>
         </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
+        <a class="btn btn--secondary" href="../#projects">
+          <i class="fas fa-arrow-left" aria-hidden="true"></i>
+          <span>Back Home</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="project-directory section">
+      <div class="section__inner">
+        <div class="filter-row reveal" id="allProjectFilters" aria-label="Project filters"></div>
+        <div class="case-list case-list--archive" id="allProjectsGrid" aria-live="polite">
+          <p class="loading-copy">Loading projects...</p>
         </div>
       </div>
-    </div> -->   
+    </section>
+  </main>
 
-  </div>
+  <footer class="site-footer">
+    <div class="section__inner footer__grid">
+      <div>
+        <a class="brand brand--footer" href="../#home">
+          <span class="brand__mark">AS</span>
+          <span class="brand__text">
+            <strong>Aditya Srivastav</strong>
+            <small>Decision Intelligence Portfolio</small>
+          </span>
+        </a>
+        <p>Projects organized for Data Analyst, Data Scientist, and Product Manager opportunities.</p>
+      </div>
+      <div class="footer__links">
+        <a href="../#projects">Selected Work</a>
+        <a href="../#skills">Capabilities</a>
+        <a href="../#contact">Contact</a>
+      </div>
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/adityasrivastav1/" target="_blank" rel="noopener"
+          aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://github.com/AdityaSrivastavDS" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="mailto:adityasrivastav729@gmail.com" aria-label="Email"><i class="fas fa-envelope"
+            aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
 
-  <div class="backbtn">
-    <a href="/#work" class="btn">
-        <i class="fas fa-arrow-left"></i>
-        <span>Back to Home</span>
+  <a href="#projects-main" class="scroll-top" id="scroll-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
   </a>
-  </div>
 
-</section>
-<!-- work project section ends -->
-
-<!-- scroll top btn -->
-<a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
-
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<!-- isotope filter plugin cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="./script.js"></script>
-
+  <script defer src="./script.js"></script>
 </body>
+
 </html>
