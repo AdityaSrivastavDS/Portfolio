@@ -1,51 +1,72 @@
 // ===== CYBERPUNK NEON INTERACTIVE EFFECTS =====
 
-// ===== PARALLAX SCROLLING =====
+// ===== PARALLAX SCROLLING (THROTTLED) =====
 const initParallax = () => {
   const parallaxElements = document.querySelectorAll('[data-parallax]');
+  let ticking = false;
+  let lastMouseX = 0;
+  let lastMouseY = 0;
   
   window.addEventListener('mousemove', (e) => {
-    const mouseX = e.clientX / window.innerWidth;
-    const mouseY = e.clientY / window.innerHeight;
+    lastMouseX = e.clientX / window.innerWidth;
+    lastMouseY = e.clientY / window.innerHeight;
     
-    parallaxElements.forEach(el => {
-      const speed = el.getAttribute('data-parallax') || 0.5;
-      const x = mouseX * 50 * speed;
-      const y = mouseY * 50 * speed;
-      
-      el.style.transform = `translate(${x}px, ${y}px)`;
-    });
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const mouseX = lastMouseX;
+        const mouseY = lastMouseY;
+        
+        parallaxElements.forEach(el => {
+          const speed = el.getAttribute('data-parallax') || 0.5;
+          const x = mouseX * 50 * speed;
+          const y = mouseY * 50 * speed;
+          
+          el.style.transform = `translate(${x}px, ${y}px)`;
+        });
+        
+        ticking = false;
+      });
+      ticking = true;
+    }
   });
 };
 
-// ===== SCROLL PARALLAX DEPTH EFFECT =====
+// ===== SCROLL PARALLAX DEPTH EFFECT (THROTTLED) =====
 const initScrollParallax = () => {
+  let ticking = false;
+  let lastScrollY = 0;
+  
   window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
+    lastScrollY = window.scrollY;
     
-    // Move background radially as user scrolls
-    document.body.style.backgroundPosition = `0 ${scrollY * 0.5}px`;
-    
-    // Create depth layers
-    const cards = document.querySelectorAll('[data-depth]');
-    cards.forEach(card => {
-      const depth = parseFloat(card.getAttribute('data-depth')) || 1;
-      card.style.transform = `translateY(${scrollY * depth * 0.02}px)`;
-    });
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrollY = lastScrollY;
+        
+        // Move background radially as user scrolls
+        document.body.style.backgroundPosition = `0 ${scrollY * 0.5}px`;
+        
+        // Create depth layers
+        const cards = document.querySelectorAll('[data-depth]');
+        cards.forEach(card => {
+          const depth = parseFloat(card.getAttribute('data-depth')) || 1;
+          card.style.transform = `translateY(${scrollY * depth * 0.02}px)`;
+        });
+        
+        ticking = false;
+      });
+      
+      ticking = true;
+    }
   });
 };
 
-// ===== MOUSE TRACKING GLOW EFFECT =====
+// ===== MOUSE TRACKING GLOW EFFECT (OPTIMIZED) =====
 const initMouseGlow = () => {
   let mouseX = 0;
   let mouseY = 0;
+  let isAnimating = false;
   
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-  
-  // Create a glow element
   const glowEl = document.createElement('div');
   glowEl.className = 'mouse-glow';
   glowEl.style.cssText = `
@@ -58,19 +79,26 @@ const initMouseGlow = () => {
     mix-blend-mode: screen;
     filter: blur(40px);
     display: none;
+    will-change: left, top;
   `;
   document.body.appendChild(glowEl);
   
-  // Animate glow following cursor
-  const animate = () => {
-    const x = mouseX - 200;
-    const y = mouseY - 200;
-    glowEl.style.left = x + 'px';
-    glowEl.style.top = y + 'px';
-    glowEl.style.display = 'block';
-    requestAnimationFrame(animate);
-  };
-  animate();
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    
+    if (!isAnimating) {
+      isAnimating = true;
+      requestAnimationFrame(() => {
+        const x = mouseX - 200;
+        const y = mouseY - 200;
+        glowEl.style.left = x + 'px';
+        glowEl.style.top = y + 'px';
+        glowEl.style.display = 'block';
+        isAnimating = false;
+      });
+    }
+  });
 };
 
 // ===== EXPANDABLE EXPERIENCE CARDS =====
@@ -248,76 +276,39 @@ const initSectionAnimations = () => {
   });
 };
 
-// ===== NEON BORDER ANIMATION ON SCROLL =====
+// ===== NEON BORDER ANIMATION ON SCROLL (THROTTLED) =====
 const initNeonBorders = () => {
   const cards = document.querySelectorAll('[class*="card"], [class*="item"]');
+  let ticking = false;
   
   window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-      const rect = card.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-      
-      if (isVisible && Math.random() > 0.95) {
-        // Random neon color pulse
-        const colors = ['var(--neon-cyan)', 'var(--neon-pink)', 'var(--neon-purple)'];
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        card.style.borderColor = randomColor;
-        setTimeout(() => {
-          card.style.borderColor = '';
-        }, 300);
-      }
-    });
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        cards.forEach(card => {
+          const rect = card.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+          
+          if (isVisible && Math.random() > 0.95) {
+            // Random neon color pulse
+            const colors = ['var(--neon-cyan)', 'var(--neon-pink)', 'var(--neon-purple)'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            card.style.borderColor = randomColor;
+            setTimeout(() => {
+              card.style.borderColor = '';
+            }, 300);
+          }
+        });
+        ticking = false;
+      });
+      ticking = true;
+    }
   });
 };
 
-// ===== FLOATING PARTICLES EFFECT =====
+// ===== FLOATING PARTICLES EFFECT (DISABLED FOR PERFORMANCE) =====
 const initFloatingParticles = () => {
-  const particleContainer = document.createElement('div');
-  particleContainer.id = 'neon-particles';
-  particleContainer.style.cssText = `
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-  `;
-  document.body.appendChild(particleContainer);
-  
-  // Create floating particles
-  for (let i = 0; i < 20; i++) {
-    const particle = document.createElement('div');
-    const size = Math.random() * 3 + 1;
-    const x = Math.random() * 100;
-    const y = Math.random() * 100;
-    const duration = Math.random() * 20 + 20;
-    const color = ['rgba(0, 255, 255, 0.5)', 'rgba(255, 0, 110, 0.3)', 'rgba(176, 0, 255, 0.4)'][Math.floor(Math.random() * 3)];
-    
-    particle.style.cssText = `
-      position: absolute;
-      width: ${size}px;
-      height: ${size}px;
-      background: ${color};
-      border-radius: 50%;
-      left: ${x}%;
-      top: ${y}%;
-      box-shadow: 0 0 ${size * 3}px ${color};
-      animation: float ${duration}s infinite ease-in-out;
-    `;
-    
-    particleContainer.appendChild(particle);
-  }
-  
-  // Add float animation
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes float {
-      0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
-      10% { opacity: 1; }
-      90% { opacity: 1; }
-      100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
-    }
-  `;
-  document.head.appendChild(style);
+  // Disabled due to performance impact - removed 20 particles with continuous animations
+  // If needed in future, use CSS only animations instead of DOM-based particles
 };
 
 // ===== KEYBOARD SHORTCUTS FOR INTERACTIVITY =====
@@ -364,5 +355,7 @@ const initCyberpunkEffects = () => {
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initCyberpunkEffects);
 } else {
-  initCyberpunkEffects();
-}
+  initCyberpunkEffects();(DISABLED FOR PERFORMANCE) =====
+const initKeyboardShortcuts = () => {
+  // Disabled heavy filter operations for performance
+  // filter: hue-rotate() causes expensive repaints

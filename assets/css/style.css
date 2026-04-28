@@ -71,8 +71,8 @@ body::before {
     radial-gradient(circle at 80% 20%, rgba(255, 0, 110, 0.12) 0%, transparent 50%),
     radial-gradient(circle at 40% 80%, rgba(176, 0, 255, 0.1) 0%, transparent 50%);
   opacity: 1;
-  animation: bgShift 25s ease-in-out infinite;
   filter: blur(15px);
+  will-change: opacity;
 }
 
 body::after {
@@ -85,8 +85,8 @@ body::after {
     radial-gradient(circle at 60% 70%, rgba(255, 102, 0, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 10% 20%, rgba(57, 255, 20, 0.06) 0%, transparent 50%);
   opacity: 0.4;
-  animation: bgShiftSecondary 30s ease-in-out infinite;
   filter: blur(15px);
+  will-change: opacity;
 }
 
 @keyframes bgShift {
