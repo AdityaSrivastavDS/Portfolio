@@ -351,6 +351,10 @@ img {
   padding-bottom: 5rem;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.2) 50%), url('../images/setup.png');
+  background-size: auto 100%, 100% 100%;
+  background-position: left top, left bottom;
+  background-repeat: no-repeat;
 }
 
 .hero::before {
@@ -550,7 +554,7 @@ img {
   position: relative;
   display: grid;
   gap: 1.2rem;
-  padding: 1.2rem;
+  padding: 1.5rem;
   border: 2px solid var(--neon-cyan);
   border-radius: var(--radius);
   background: linear-gradient(135deg, rgba(0, 255, 255, 0.08) 0%, rgba(255, 0, 110, 0.05) 100%),
@@ -558,7 +562,8 @@ img {
   box-shadow: var(--glow-cyan), inset 0 1px 0 rgba(0, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  overflow: hidden;
+  overflow: visible;
+}
 }
 
 .decision-console::before {
@@ -647,19 +652,21 @@ img {
 }
 
 .console__top {
-  display: grid;
-  grid-template-columns: 12rem minmax(0, 1fr);
-  gap: 1.4rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 1.2rem;
+  gap: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .console__top img {
-  width: 12rem;
-  height: 12rem;
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-sm);
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
+  display: block;
 }
 
 .console__top span,
@@ -674,7 +681,8 @@ img {
 
 .console__top strong {
   display: block;
-  margin-top: 0.2rem;
+  margin-top: 1rem;
+  padding: 1rem;
   color: var(--ink);
   font-size: 2.25rem;
   line-height: 1.1;
@@ -1808,12 +1816,12 @@ img {
   }
 
   .console__top {
-    grid-template-columns: 9rem minmax(0, 1fr);
+    flex-direction: column;
   }
 
   .console__top img {
-    width: 9rem;
-    height: 9rem;
+    width: 24rem;
+    height: 24rem;
   }
 
   .impact-map div {

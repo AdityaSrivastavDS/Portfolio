@@ -23,7 +23,7 @@ const portfolio = {
       title: "Product & Consulting",
       icon: "fas fa-bullseye",
       summary: "Connecting user problems, stakeholder needs, workflows, and measurable product outcomes.",
-      skills: ["Product Management", "Requirements", "Process Mapping", "Documentation", "UAT", "User Flows", "Prioritization", "Stakeholder Communication"]
+      skills: ["Product Management", "Requirements", "Process Mapping", "Documentation", "UAT", "User Flows", "Prioritization", "Stakeholder Communication", "SAP ECC/S4 Hana", "CPI", "Jira", "Notion"]
     },
     {
       title: "Frontend & Prototyping",
@@ -41,8 +41,19 @@ const portfolio = {
   experience: [
     {
       company: "Prospecta Software",
+      role: "Solutions Consultant | Noida",
+      period: "Jun 2026 - Present",
+      points: [
+        "Promoted to Solutions Consultant, leading client engagement sessions to define complex business problems and architect scalable technical solutions.",
+        "Mentor Associate Consultants and junior team members, fostering technical excellence and best practices in project delivery.",
+        "Drive optimization initiatives on the MDO platform, improving system performance and data quality standards across clients.",
+        "Lead end-to-end solution design from discovery through implementation, ensuring strategic alignment with business objectives."
+      ]
+    },
+    {
+      company: "Prospecta Software",
       role: "Associate Consultant | Noida",
-      period: "Nov 2025 - Present",
+      period: "Nov 2025 - May 2026",
       points: [
         "Translate client needs into structured requirements, workflows, blueprints, test cases, and implementation plans.",
         "Configure MDO datasets, business rules, and data workflows to improve data quality and process reliability.",
@@ -545,7 +556,7 @@ function initScrollAnimations() {
 document.addEventListener("visibilitychange", () => {
   const favicon = qs("#favicon");
   if (document.visibilityState === "visible") {
-    document.title = "Aditya Srivastav | Data Analyst, Data Scientist & Product Portfolio";
+    document.title = "Aditya Srivastav | Data Analyst, Consultant & Product Portfolio";
     favicon?.setAttribute("href", "assets/images/favicon.png");
   } else {
     document.title = "Aditya Srivastav | Data & Product Portfolio";
