@@ -148,6 +148,16 @@ const portfolio = {
       icon: "fas fa-certificate",
       text: "Recognition for community leadership, technical workshops, and student enablement."
     }
+  ],
+  wins: [
+    { title: "Promotion", subtitle: "Solutions Consultant", note: "Moved from associate to solution ownership in under a year." },
+    { title: "50k+", subtitle: "Daily logs interpreted", note: "ML anomaly dashboard work for enterprise onboarding workflows." },
+    { title: "100+", subtitle: "Cloud challenges enabled", note: "Community-led learning events and technical sessions." },
+    { title: "2+", subtitle: "Live product surfaces", note: "Shipped practical analytics and AI-first tooling." },
+    { title: "10+", subtitle: "Hackathons facilitated", note: "Hands-on mentorship and problem framing support." },
+    { title: "AWS", subtitle: "AI engineering community", note: "Contributor focused on practical AI implementation." },
+    { title: "MSA", subtitle: "Microsoft Student Ambassador", note: "Technical outreach, workshops, and ecosystem support." },
+    { title: "Cross-functional", subtitle: "Consulting x Data x Product", note: "Delivery at the intersection of business and technical execution." }
   ]
 };
 
@@ -345,6 +355,30 @@ function linkOrDisabled(href, label, iconClass) {
   return `<a class="icon-link" href="${href}" target="_blank" rel="noopener" data-analytics="project-${label.toLowerCase().replace(/\s+/g, "-")}"><i class="${iconClass}" aria-hidden="true"></i>${label}</a>`;
 }
 
+function projectSignal(project) {
+  const source = `${project.impact || ""} ${project.summary || ""}`;
+  const match = source.match(/(\d+\+?%?|\d+\+|\d+\s*\+\s*|\d+\/?\d*)/);
+  if (match) return `~ ${match[0].replace(/\s+/g, "").replace(/\+$/, "+")} measurable signal`;
+  return "~ practical delivery signal";
+}
+
+function compactCopy(text, maxWords = 18) {
+  const cleaned = String(text || "").replace(/\s+/g, " ").trim();
+  if (!cleaned) return "";
+
+  const words = cleaned.split(" ");
+  if (words.length <= maxWords) return cleaned;
+  return `${words.slice(0, maxWords).join(" ")}...`;
+}
+
+function projectPoints(project) {
+  return [
+    compactCopy(project.problem || "Business context clarified before tool selection."),
+    compactCopy(project.approach || "Implementation designed around reliability and adoption."),
+    compactCopy(project.impact || "Delivered a measurable improvement in workflow clarity.")
+  ];
+}
+
 function renderProjects(projects, filter = "featured") {
   const container = qs("#projectsContainer");
   if (!container) return;
@@ -359,16 +393,16 @@ function renderProjects(projects, filter = "featured") {
         <img src="${projectImage(project)}" alt="${project.name} preview" loading="lazy">
       </div>
       <div class="case-card__body">
-        <div class="case-card__meta">
-          <span>${project.role || project.category || "Project"}</span>
+        <div class="case-card__kicker">
+          <span class="case-card__category">${project.category || project.role || "Project"}</span>
+          <span class="case-card__signal">${projectSignal(project)}</span>
         </div>
         <h3>${project.name}</h3>
+        <p class="case-card__stack">${(project.stack || []).slice(0, 4).join(" · ") || "Applied systems"}</p>
         <p class="project-summary">${project.summary || project.desc || ""}</p>
-        <div class="impact-map">
-          <div><strong>Problem</strong><span>${project.problem || "Business problem translated into a practical solution."}</span></div>
-          <div><strong>Approach</strong><span>${project.approach || "Designed, built, tested, and iterated with a focused technical stack."}</span></div>
-          <div><strong>Impact</strong><span>${project.impact || "Created a clearer workflow and stronger decision support."}</span></div>
-        </div>
+        <ul class="case-card__points">
+          ${projectPoints(project).map((point) => `<li>${point}</li>`).join("")}
+        </ul>
         <div class="project-tags">
           ${(project.stack || []).slice(0, 5).map((tag) => `<span class="project-tag">${tag}</span>`).join("")}
         </div>
@@ -413,6 +447,55 @@ function renderAchievements() {
       <strong>${achievement.value}</strong>
       <h3>${achievement.title}</h3>
       <p>${achievement.text}</p>
+    </article>
+  `).join("");
+}
+
+function getUniverseSkills() {
+  const seen = new Set();
+  const flat = [];
+
+  portfolio.skillGroups.forEach((group) => {
+    group.skills.forEach((skill) => {
+      const key = skill.toLowerCase();
+      if (seen.has(key)) return;
+      seen.add(key);
+      flat.push({ skill, group: group.title });
+    });
+  });
+
+  return flat.slice(0, 28);
+}
+
+function renderSkillsOrbit() {
+  const container = qs("#skillsOrbit");
+  if (!container) return;
+
+  const nodes = getUniverseSkills();
+  container.innerHTML = `
+    <div class="skills-orbit__center">SKILLS</div>
+    ${nodes.map((node, index) => {
+      const ring = index % 4;
+      const radius = 86 + ring * 44;
+      const angle = (360 / nodes.length) * index;
+      return `
+        <button class="skills-orbit__node" type="button" style="--angle:${angle}deg; --radius:${radius}px" data-skill="${node.skill}" data-group="${node.group}" aria-label="${node.skill}: ${node.group}">
+          <span>${node.skill}</span>
+        </button>
+      `;
+    }).join("")}
+  `;
+}
+
+function renderWins() {
+  const container = qs("#winsGrid");
+  if (!container) return;
+
+  container.innerHTML = portfolio.wins.map((item) => `
+    <article class="win-tile reveal">
+      <h3>${item.title}</h3>
+      <strong>${item.subtitle}</strong>
+      <p>${item.note}</p>
     </article>
   `).join("");
 }
@@ -574,8 +657,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   initEnhancedInteractions();
   initScrollAnimations();
   renderSkills();
+  renderSkillsOrbit();
   renderExperience();
   renderAchievements();
+  renderWins();
 
   const projects = await getProjects();
   renderProjectFilters(projects);
