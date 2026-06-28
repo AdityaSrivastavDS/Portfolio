@@ -398,7 +398,7 @@ function renderProjects(projects, filter = "featured") {
           <span class="case-card__signal">${projectSignal(project)}</span>
         </div>
         <h3>${project.name}</h3>
-        <p class="case-card__stack">${(project.stack || []).slice(0, 4).join(" · ") || "Applied systems"}</p>
+        <p class="case-card__stack">${(project.stack || []).slice(0, 4).join(" - ") || "Applied systems"}</p>
         <p class="project-summary">${project.summary || project.desc || ""}</p>
         <ul class="case-card__points">
           ${projectPoints(project).map((point) => `<li>${point}</li>`).join("")}
@@ -485,6 +485,34 @@ function renderSkillsOrbit() {
       `;
     }).join("")}
   `;
+}
+
+function initSkillsOrbitInteraction() {
+  const orbit = qs("#skillsOrbit");
+  const profile = qs("#skillsOrbitProfile");
+  if (!orbit || !profile) return;
+
+  const nodes = qsa(".skills-orbit__node", orbit);
+  nodes.forEach((node) => {
+    const showSkill = () => {
+      const skill = node.dataset.skill;
+      const group = node.dataset.group;
+      profile.innerHTML = `<strong>${skill}</strong><p>${group}. Used as part of the portfolio's consulting, analytics, and product delivery workflow.</p>`;
+    };
+
+    node.addEventListener("mouseenter", showSkill);
+    node.addEventListener("focus", showSkill);
+  });
+
+  if (!prefersReducedMotion) {
+    let rotation = 0;
+    const tick = () => {
+      rotation = (rotation + 0.035) % 360;
+      orbit.style.setProperty("--orbit-rotation", `${rotation}deg`);
+      window.requestAnimationFrame(tick);
+    };
+    window.requestAnimationFrame(tick);
+  }
 }
 
 function renderWins() {
@@ -658,6 +686,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initScrollAnimations();
   renderSkills();
   renderSkillsOrbit();
+  initSkillsOrbitInteraction();
   renderExperience();
   renderAchievements();
   renderWins();

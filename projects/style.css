@@ -6,11 +6,10 @@
   padding-top: 3rem;
 }
 
-/* Additional enhancement for project listing */
 .case-list--archive .case-card {
-  border-color: rgba(0, 255, 136, 0.2);
+  border-color: var(--line);
 }
 
 .case-list--archive .case-card:hover {
-  border-color: rgba(0, 255, 136, 0.5);
+  border-color: var(--line-strong);
 }
