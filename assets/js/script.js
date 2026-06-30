@@ -91,13 +91,25 @@ const portfolio = {
       ]
     },
     {
-      company: "Microsoft",
-      role: "Student Ambassador | Volunteering",
-      period: "Oct 2023 - Feb 2025",
+      company: "360DigiTMG",
+      role: "Data Science Trainee",
+      period: "Oct 2023 - Nov 2023",
+      link: "https://www.linkedin.com/in/adityasrivastav1/details/experience/edit/forms/2324181248/",
       points: [
-        "Led technical sessions across AI, cloud, and data topics for student communities.",
-        "Organized hackathons and cloud skill challenges that encouraged real-world problem solving.",
-        "Worked with a global ambassador community to share resources, certifications, and industry learning."
+        "Completed focused training across data science workflows, analytics foundations, and model-building concepts.",
+        "Practiced data preprocessing, exploratory analysis, and applied machine-learning exercises.",
+        "Strengthened Python, statistics, and data storytelling foundations for later project work."
+      ]
+    },
+    {
+      company: "Morgan Stanley",
+      role: "Trainee",
+      period: "Nov 2022 - Feb 2023",
+      link: "https://www.linkedin.com/in/adityasrivastav1/details/experience/edit/forms/2559122842/",
+      points: [
+        "Completed early professional training exposure across business, technology, and financial-services workflows.",
+        "Built foundational understanding of structured problem solving, documentation, and workplace communication.",
+        "Used the experience as an entry point into analytics-led business and technology thinking."
       ]
     },
     {
@@ -111,7 +123,56 @@ const portfolio = {
       ]
     }
   ],
+  community: [
+    {
+      company: "Microsoft",
+      role: "Student Ambassador | Volunteering",
+      period: "Oct 2023 - Feb 2025",
+      points: [
+        "Led technical sessions across AI, cloud, and data topics for student communities.",
+        "Organized hackathons and cloud skill challenges that encouraged real-world problem solving.",
+        "Worked with a global ambassador community to share resources, certifications, and industry learning."
+      ]
+    },
+    {
+      company: "AWS",
+      role: "Community Builder | AI Engineering",
+      period: "Mar 2025 - Jan 2026",
+      link: "https://www.linkedin.com/in/adityasrivastav1/details/experience/edit/forms/2597823242/",
+      points: [
+        "Contributed to the AWS AI Engineering community through learning, technical exploration, and ecosystem participation.",
+        "Focused on practical AI engineering patterns, cloud-backed experimentation, and community knowledge sharing.",
+        "Connected cloud and AI concepts to portfolio projects, workshops, and student enablement."
+      ]
+    },
+    {
+      company: "Google Developer Club",
+      role: "Project Lead",
+      period: "May 2024 - Jun 2025",
+      points: [
+        "Led project-focused initiatives for student developers, helping turn ideas into practical builds.",
+        "Supported collaboration across design, development, data, and presentation workflows.",
+        "Helped teams scope project goals, divide ownership, and move from concept to demo."
+      ]
+    },
+    {
+      company: "Google Developer Club",
+      role: "Data Science Team Lead",
+      period: "Feb 2023 - Apr 2024",
+      points: [
+        "Guided data-science learning and peer collaboration within the developer community.",
+        "Supported workshops and practice sessions across Python, analytics, and machine-learning foundations.",
+        "Helped students connect theory with small applied projects and portfolio-ready outcomes."
+      ]
+    }
+  ],
   achievements: [
+    {
+      value: "MVP",
+      title: "Microsoft MVP Award Nominee",
+      icon: "fas fa-award",
+      text: "Nominated for the Microsoft Most Valuable Professional Award in 2024 and 2025."
+    },
     {
       value: "2+",
       title: "Live Projects",
@@ -150,7 +211,9 @@ const portfolio = {
     }
   ],
   wins: [
+    { title: "MVP", subtitle: "Microsoft award nominee", note: "Nominated for Microsoft Most Valuable Professional Award in 2024 and 2025." },
     { title: "Promotion", subtitle: "Solutions Consultant", note: "Moved from associate to solution ownership in under a year." },
+    { title: "GDSC", subtitle: "Project and data science lead", note: "Led community project and data-science initiatives across 2023 - 2025." },
     { title: "50k+", subtitle: "Daily logs interpreted", note: "ML anomaly dashboard work for enterprise onboarding workflows." },
     { title: "100+", subtitle: "Cloud challenges enabled", note: "Community-led learning events and technical sessions." },
     { title: "2+", subtitle: "Live product surfaces", note: "Shipped practical analytics and AI-first tooling." },
@@ -417,24 +480,34 @@ function renderProjects(projects, filter = "featured") {
   initReveal();
 }
 
-function renderExperience() {
-  const container = qs("#experienceTimeline");
+function renderRoleList(container, items, openFirst = false) {
   if (!container) return;
 
-  container.innerHTML = portfolio.experience.map((item) => `
-    <article class="experience-item reveal">
-      <div class="experience-item__top">
+  container.innerHTML = items.map((item, index) => `
+    <details class="experience-item interactive-panel reveal" ${openFirst && index === 0 ? "open" : ""}>
+      <summary class="experience-item__summary">
+        <span class="panel-index">${String(index + 1).padStart(2, "0")}</span>
         <div>
           <h3>${item.company}</h3>
           <h4>${item.role}</h4>
         </div>
         <span>${item.period}</span>
-      </div>
+        <i class="fas fa-plus" aria-hidden="true"></i>
+      </summary>
       <ul>
         ${item.points.map((point) => `<li>${point}</li>`).join("")}
       </ul>
-    </article>
+      ${item.link ? `<a class="panel-link" href="${item.link}" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i> View credential</a>` : ""}
+    </details>
   `).join("");
+}
+
+function renderExperience() {
+  renderRoleList(qs("#experienceTimeline"), portfolio.experience, true);
+}
+
+function renderCommunity() {
+  renderRoleList(qs("#communityTimeline"), portfolio.community, true);
 }
 
 function renderAchievements() {
@@ -513,6 +586,44 @@ function initSkillsOrbitInteraction() {
     };
     window.requestAnimationFrame(tick);
   }
+}
+
+function initCardFocusStates() {
+  const selector = [
+    ".thesis-board article",
+    ".education-item",
+    ".interactive-panel",
+    ".case-card",
+    ".proof-item",
+    ".capability-card",
+    ".win-tile"
+  ].join(", ");
+  const cards = qsa(selector);
+
+  cards.forEach((card) => {
+    if (card.dataset.focusReady === "true") return;
+    card.dataset.focusReady = "true";
+
+    const setActive = () => {
+      const group = card.parentElement;
+      if (!group) return;
+      qsa(selector, group).forEach((item) => item.classList.remove("is-highlighted"));
+      card.classList.add("is-highlighted");
+    };
+
+    const clearActive = () => card.classList.remove("is-highlighted");
+
+    card.addEventListener("mouseenter", setActive);
+    card.addEventListener("focusin", setActive);
+    card.addEventListener("mouseleave", clearActive);
+  });
+}
+
+function syncHashScroll() {
+  if (!window.location.hash) return;
+  const target = document.getElementById(window.location.hash.slice(1));
+  if (!target) return;
+  window.setTimeout(() => target.scrollIntoView({ block: "start" }), 80);
 }
 
 function renderWins() {
@@ -628,7 +739,7 @@ function initEnhancedInteractions() {
   });
 
   // Smooth reveal for metric tickers
-  const metrics = qsa(".metric-ticker span");
+  const metrics = qsa(".metric-ticker a, .metric-ticker span");
   metrics.forEach((metric, index) => {
     metric.style.setProperty("--index", index);
     metric.style.animation = `slideUp 0.6s ease-out ${index * 0.1}s backwards`;
@@ -636,32 +747,7 @@ function initEnhancedInteractions() {
 }
 
 function initScrollAnimations() {
-  // Smooth section reveal on scroll
-  const sections = qsa(".section");
-  
-  if (!("IntersectionObserver" in window)) return;
-
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -100px 0px"
-  };
-
-  const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = "1";
-        entry.target.style.transform = "translateY(0)";
-        sectionObserver.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  sections.forEach((section) => {
-    section.style.opacity = "0";
-    section.style.transform = "translateY(20px)";
-    section.style.transition = "opacity 800ms ease, transform 800ms ease";
-    sectionObserver.observe(section);
-  });
+  return;
 }
 
 document.addEventListener("visibilitychange", () => {
@@ -688,12 +774,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderSkillsOrbit();
   initSkillsOrbitInteraction();
   renderExperience();
+  renderCommunity();
   renderAchievements();
   renderWins();
+  initCardFocusStates();
 
   const projects = await getProjects();
   renderProjectFilters(projects);
   renderProjects(projects);
+  initCardFocusStates();
+  syncHashScroll();
   initContactForm();
   initReveal();
 });

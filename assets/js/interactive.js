@@ -16,7 +16,7 @@
   }
 
   function initMetricRow() {
-    const metrics = qsa(".metric-ticker span");
+    const metrics = qsa(".metric-ticker a, .metric-ticker span");
     if (!metrics.length) return;
 
     metrics.forEach((metric, index) => {
