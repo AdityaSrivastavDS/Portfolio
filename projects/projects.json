@@ -3,14 +3,24 @@
     "name": "PoseGuard",
     "role": "ML / Computer Vision",
     "category": "Machine Learning",
-    "summary": "Real-time driver monitoring system that detects distracted or unsafe driving posture.",
+    "summary": "Real-time driver monitoring system detecting distracted or unsafe driving postures.",
     "desc": "Real-time driver monitoring system that detects distracted or unsafe driver postures.",
-    "problem": "Driver distraction needs faster, more consistent detection than manual review can provide.",
-    "approach": "Built a Python computer-vision pipeline using OpenCV and CNN workflows to detect posture and distraction signals.",
-    "impact": "Created an alert-ready monitoring flow and logged 80+ distraction events during testing.",
-    "stack": ["Python", "OpenCV", "CNN", "TensorFlow", "Computer Vision"],
+    "problem": "Manual review of driver behavior is too slow and inconsistent for real-time safety monitoring.",
+    "approach": "Developed a computer vision pipeline using Python, OpenCV, and CNNs to detect unsafe postures.",
+    "impact": "Logged 80+ distraction events during testing, demonstrating a practical alert-ready monitoring system.",
+    "stack": [
+      "Python",
+      "OpenCV",
+      "CNN",
+      "TensorFlow",
+      "Computer Vision"
+    ],
     "image": "poseguard",
-    "focus": ["featured", "ml", "data"],
+    "focus": [
+      "featured",
+      "ml",
+      "data"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/PoseGuard"
@@ -20,14 +30,25 @@
     "name": "Amazon Product Reviews Sentiment Analyzer",
     "role": "NLP / Product Analytics",
     "category": "Data Science",
-    "summary": "A deployed sentiment analysis app that classifies reviews and visualizes customer opinion patterns.",
+    "summary": "Deployed sentiment analysis web app that classifies reviews and visualizes customer opinion patterns.",
     "desc": "Sentiment analysis tool to classify reviews as positive, negative, or neutral, and provide a visual representation of the sentiment distribution.",
-    "problem": "Product teams need a faster way to understand review sentiment without reading every comment manually.",
-    "approach": "Created an NLP workflow with a web interface for classification, sentiment distribution, and review interpretation.",
-    "impact": "Shipped a live tool that turns unstructured customer feedback into easier decision support.",
-    "stack": ["Python", "NLP", "Flask", "Pandas", "Visualization"],
+    "problem": "Product teams waste hours manually reading customer reviews to understand overall product sentiment.",
+    "approach": "Built a Flask web app integrating an NLP workflow to automatically classify reviews and visualize sentiment distribution.",
+    "impact": "Shipped a live tool that transforms unstructured feedback into immediate, data-driven decision support.",
+    "stack": [
+      "Python",
+      "NLP",
+      "Flask",
+      "Pandas",
+      "Visualization"
+    ],
     "image": "analysis_web",
-    "focus": ["featured", "ml", "data", "product"],
+    "focus": [
+      "featured",
+      "ml",
+      "data",
+      "product"
+    ],
     "links": {
       "view": "https://amazon-review-sentiment-analyzer-web-app.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Amazon-Sentiment-Analysis-Review-Web-App"
@@ -39,12 +60,22 @@
     "category": "Analytics",
     "summary": "Interactive sales dashboard for monitoring performance, customer behavior, and business KPIs.",
     "desc": "The dashboard provides comprehensive insights into sales performance, customer behavior, and other key metrics to help drive business decisions.",
-    "problem": "Sales performance data becomes difficult to act on when metrics are scattered across sources.",
-    "approach": "Designed a dashboard view around sales KPIs, customer behavior, and performance comparisons.",
-    "impact": "Improved decision readiness by turning sales data into a clear executive-style dashboard.",
-    "stack": ["Power BI", "Excel", "Data Modeling", "KPI Design", "Dashboarding"],
+    "problem": "Sales performance data is difficult to act on when metrics are scattered across multiple sources.",
+    "approach": "Designed a Power BI dashboard centered around core sales KPIs and customer behavior comparisons.",
+    "impact": "Improved decision readiness by turning raw sales data into a clear, executive-style dashboard.",
+    "stack": [
+      "Power BI",
+      "Excel",
+      "Data Modeling",
+      "KPI Design",
+      "Dashboarding"
+    ],
     "image": "dashboard",
-    "focus": ["featured", "data", "product"],
+    "focus": [
+      "featured",
+      "data",
+      "product"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Madhav-Ecommerce-Sales-Dashboard"
@@ -54,14 +85,24 @@
     "name": "Mental Health Sentiment Analysis",
     "role": "NLP / Responsible AI",
     "category": "Data Science",
-    "summary": "Text analysis project for categorizing mental-health-related statements into meaningful sentiment groups.",
+    "summary": "Text analysis workflow categorizing mental-health-related statements into meaningful sentiment groups.",
     "desc": "Analysis aimed at identifying and categorizing various mental health conditions based on user statements.",
-    "problem": "Mental-health statements require careful text classification to surface patterns responsibly.",
-    "approach": "Cleaned text data, engineered features, and evaluated NLP classification approaches.",
-    "impact": "Built a structured analysis flow for transforming raw statements into interpretable categories.",
-    "stack": ["Python", "NLP", "Pandas", "Scikit-learn", "Data Cleaning"],
+    "problem": "Mental-health statements require careful, structured text classification to surface patterns responsibly.",
+    "approach": "Cleaned text data, engineered features, and evaluated NLP classification models using Scikit-learn.",
+    "impact": "Built a structured analysis flow that transforms raw statements into interpretable, categorized data.",
+    "stack": [
+      "Python",
+      "NLP",
+      "Pandas",
+      "Scikit-learn",
+      "Data Cleaning"
+    ],
     "image": "mental",
-    "focus": ["featured", "ml", "data"],
+    "focus": [
+      "featured",
+      "ml",
+      "data"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Mental-Health-Sentiment-Analysis"
@@ -71,14 +112,24 @@
     "name": "Multilingual Chatbot Ticket Booking System",
     "role": "AI Product Prototype",
     "category": "Web Development",
-    "summary": "A multilingual chatbot ticket-booking platform with booking flows, 3D museum viewing, and web support.",
+    "summary": "Multilingual ticket-booking platform with a chatbot, booking flows, and a 3D museum viewer.",
     "desc": "A Multilingual Chatbot Ticket Booking System enabling ticket reservations, 3D museum model viewing, chatbot assistance, and multi-language web interface support.",
-    "problem": "Visitors need a simpler booking experience that handles language friction and guided assistance.",
-    "approach": "Built a multilingual web product with chatbot support, ticket-booking flow, and 3D museum interaction.",
-    "impact": "Deployed a live product prototype that combines accessibility, automation, and immersive browsing.",
-    "stack": ["JavaScript", "Chatbot", "Three.js", "Web App", "Product UX"],
+    "problem": "Visitors face language barriers and friction when trying to navigate standard museum booking systems.",
+    "approach": "Built a multilingual web product (JavaScript, Three.js) featuring chatbot support and 3D interactions.",
+    "impact": "Deployed a live product prototype combining automated assistance with immersive browsing.",
+    "stack": [
+      "JavaScript",
+      "Chatbot",
+      "Three.js",
+      "Web App",
+      "Product UX"
+    ],
     "image": "homepage",
-    "focus": ["featured", "product", "ml"],
+    "focus": [
+      "featured",
+      "product",
+      "ml"
+    ],
     "links": {
       "view": "https://museumhub.onrender.com/",
       "code": "https://github.com/AdityaSrivastavDS/Multilingual-Chatbot-Ticket-Booking-System"
@@ -88,14 +139,24 @@
     "name": "Cricket Best 11 Analysis Dashboard",
     "role": "Sports Analytics / BI",
     "category": "Analytics",
-    "summary": "Power BI dashboard for comparing players and selecting an optimized cricket playing eleven.",
+    "summary": "Sports analytics dashboard for comparing players and selecting an optimized playing eleven.",
     "desc": "Cricket Best 11 Analysis Dashboard, a Power BI-based interactive platform designed to help you analyze and select the best playing 11 for cricket teams.",
-    "problem": "Team selection requires comparing multiple performance dimensions quickly and fairly.",
+    "problem": "Team selection requires comparing multiple performance dimensions quickly and fairly across roles.",
     "approach": "Modeled player metrics in Power BI and designed interactive views for role-based comparison.",
-    "impact": "Created a decision-support dashboard for faster, more transparent playing-eleven selection.",
-    "stack": ["Power BI", "Data Modeling", "Sports Analytics", "DAX", "Dashboarding"],
+    "impact": "Created a data-driven decision-support dashboard for faster, more transparent player selection.",
+    "stack": [
+      "Power BI",
+      "Data Modeling",
+      "Sports Analytics",
+      "DAX",
+      "Dashboarding"
+    ],
     "image": "cric",
-    "focus": ["featured", "data", "product"],
+    "focus": [
+      "featured",
+      "data",
+      "product"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Cricket-Best-11-Analysis-Dashboard"
@@ -110,9 +171,18 @@
     "problem": "Users need a hands-free way to trigger tasks and receive contextual answers.",
     "approach": "Integrated speech-to-text, command interpretation, and AI response generation in Python.",
     "impact": "Created an assistant prototype that demonstrates applied AI interaction design.",
-    "stack": ["Python", "Google Cloud", "Speech-to-Text", "AI", "Automation"],
+    "stack": [
+      "Python",
+      "Google Cloud",
+      "Speech-to-Text",
+      "AI",
+      "Automation"
+    ],
     "image": "Mihir_Bot",
-    "focus": ["ml", "product"],
+    "focus": [
+      "ml",
+      "product"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/AI-Voice-Assistant"
@@ -127,9 +197,17 @@
     "problem": "Manual video review is inefficient for tracking movement and event-entry patterns.",
     "approach": "Used color tracking, quadrant logic, event logging, and processed-video output generation.",
     "impact": "Automated a visual analytics workflow that records events directly from video streams.",
-    "stack": ["Python", "OpenCV", "Video Analytics", "Event Logging"],
+    "stack": [
+      "Python",
+      "OpenCV",
+      "Video Analytics",
+      "Event Logging"
+    ],
     "image": "ball",
-    "focus": ["ml", "data"],
+    "focus": [
+      "ml",
+      "data"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/SecqurAIse-Technologies-Project"
@@ -144,9 +222,17 @@
     "problem": "Mechanical design feedback can be slow, inconsistent, and hard to operationalize.",
     "approach": "Explored AI-assisted feedback loops to support design review and decision quality.",
     "impact": "Produced a practical concept for improving iteration speed and review clarity.",
-    "stack": ["AI", "Python", "Design Feedback", "Product Thinking"],
+    "stack": [
+      "AI",
+      "Python",
+      "Design Feedback",
+      "Product Thinking"
+    ],
     "image": "ai",
-    "focus": ["ml", "product"],
+    "focus": [
+      "ml",
+      "product"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System"
@@ -161,9 +247,16 @@
     "problem": "Learners need a single organized path for Python fundamentals and implementation examples.",
     "approach": "Curated topic-based tutorials and code references into a searchable repository.",
     "impact": "Created a reusable learning asset for Python and analytics foundations.",
-    "stack": ["Python", "Documentation", "Examples", "Teaching"],
+    "stack": [
+      "Python",
+      "Documentation",
+      "Examples",
+      "Teaching"
+    ],
     "image": "python_guide",
-    "focus": ["data"],
+    "focus": [
+      "data"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Python-Complete-Guide"
@@ -178,9 +271,17 @@
     "problem": "Data science learners often struggle with scattered concepts and disconnected examples.",
     "approach": "Organized core concepts, code examples, and references into a guided repository.",
     "impact": "Built a reusable knowledge base for strengthening applied data science foundations.",
-    "stack": ["Data Science", "Python", "Machine Learning", "Documentation"],
+    "stack": [
+      "Data Science",
+      "Python",
+      "Machine Learning",
+      "Documentation"
+    ],
     "image": "data_science_guide",
-    "focus": ["data", "ml"],
+    "focus": [
+      "data",
+      "ml"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Data-Science-Guide"
@@ -195,9 +296,16 @@
     "problem": "Hospital operations need structured records and simpler administrative workflows.",
     "approach": "Built a Java and MySQL application for core hospital management tasks.",
     "impact": "Demonstrated database-backed workflow design for operational efficiency.",
-    "stack": ["Java", "MySQL", "OOP", "Database Design"],
+    "stack": [
+      "Java",
+      "MySQL",
+      "OOP",
+      "Database Design"
+    ],
     "image": "hm",
-    "focus": ["product"],
+    "focus": [
+      "product"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Hospital-Management-System"
@@ -212,9 +320,16 @@
     "problem": "Puzzle users need a simple web-based way to practice and measure solving progress.",
     "approach": "Built an interactive browser experience with controls, timing, and stats.",
     "impact": "Shipped a live web app with clear feedback loops for repeat use.",
-    "stack": ["JavaScript", "Web App", "Interaction Design", "Netlify"],
+    "stack": [
+      "JavaScript",
+      "Web App",
+      "Interaction Design",
+      "Netlify"
+    ],
     "image": "cube",
-    "focus": ["product"],
+    "focus": [
+      "product"
+    ],
     "links": {
       "view": "https://rubikcubes.netlify.app/",
       "code": "https://github.com/AdityaSrivastavDS/Rubik-s-Cube"
@@ -229,9 +344,16 @@
     "problem": "Simple web games need responsive controls and clear feedback to feel satisfying.",
     "approach": "Implemented game mechanics, scoring, and interaction states in the browser.",
     "impact": "Deployed a lightweight game that demonstrates frontend interaction polish.",
-    "stack": ["JavaScript", "Game Logic", "Canvas", "Netlify"],
+    "stack": [
+      "JavaScript",
+      "Game Logic",
+      "Canvas",
+      "Netlify"
+    ],
     "image": "game",
-    "focus": ["product"],
+    "focus": [
+      "product"
+    ],
     "links": {
       "view": "https://stickherogames.netlify.app/",
       "code": "https://github.com/AdityaSrivastavDS/Stick-Hero-Game"
@@ -246,9 +368,16 @@
     "problem": "Java learners need clear examples organized from fundamentals to deeper concepts.",
     "approach": "Created a repository of guided examples, explanations, and reference implementations.",
     "impact": "Built a durable learning resource for programming and software fundamentals.",
-    "stack": ["Java", "OOP", "Documentation", "Examples"],
+    "stack": [
+      "Java",
+      "OOP",
+      "Documentation",
+      "Examples"
+    ],
     "image": "java_guide",
-    "focus": ["product"],
+    "focus": [
+      "product"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Java-Complete-Guide"
@@ -263,9 +392,16 @@
     "problem": "Understanding ML internals requires looking below high-level frameworks.",
     "approach": "Explored neural-network and kernel concepts through low-level implementation.",
     "impact": "Strengthened model-mechanics understanding by moving closer to computational primitives.",
-    "stack": ["Assembly", "Neural Networks", "Algorithms", "ML Internals"],
+    "stack": [
+      "Assembly",
+      "Neural Networks",
+      "Algorithms",
+      "ML Internals"
+    ],
     "image": "asm",
-    "focus": ["ml"],
+    "focus": [
+      "ml"
+    ],
     "links": {
       "view": "",
       "code": "https://github.com/AdityaSrivastavDS/Neural-NET-ASM"

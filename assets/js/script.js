@@ -2,62 +2,46 @@
 const portfolio = {
   skillGroups: [
     {
-      title: "Data Analytics & BI",
-      icon: "fas fa-chart-bar",
-      summary: "Turning raw business data into decision-ready dashboards, KPIs, and insight narratives.",
-      skills: ["SQL", "Power BI", "Tableau", "MS Excel", "IBM Cognos", "SPSS Modeler", "Data Cleaning", "KPI Design"]
-    },
-    {
-      title: "Data Science & ML",
-      icon: "fas fa-brain",
-      summary: "Building and evaluating practical models with a focus on explainability and usable outputs.",
-      skills: ["Python", "Pandas", "NumPy", "TensorFlow", "Machine Learning", "NLP", "Computer Vision", "Model Evaluation"]
-    },
-    {
-      title: "Databases, Cloud & Systems",
-      icon: "fas fa-server",
-      summary: "Working across data storage, cloud tooling, and scalable deployment foundations.",
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "AWS", "Azure", "Google Cloud", "Apache Spark", "Git"]
-    },
-    {
-      title: "Product & Consulting",
+      title: "Consulting",
       icon: "fas fa-bullseye",
-      summary: "Connecting user problems, stakeholder needs, workflows, and measurable product outcomes.",
-      skills: ["Product Management", "Requirements", "Process Mapping", "Documentation", "UAT", "User Flows", "Prioritization", "Stakeholder Communication", "SAP ECC/S4 Hana", "CPI", "Jira", "Notion"]
+      summary: "Translating business problems into documented workflows and actionable requirements.",
+      skills: ["Requirements Gathering", "Functional Documentation", "Process Mapping", "UAT / Testing", "Stakeholder Communication"]
     },
     {
-      title: "Frontend & Prototyping",
+      title: "Data",
+      icon: "fas fa-chart-bar",
+      summary: "Cleaning and analyzing inputs to create useful evidence for decision-making.",
+      skills: ["SQL", "MS Excel", "Power BI", "Data Analysis", "Data Cleaning", "Data Validation"]
+    },
+    {
+      title: "Enterprise Data",
+      icon: "fas fa-server",
+      summary: "Structuring and migrating enterprise data for reliability and governance.",
+      skills: ["Master Data Management", "SAP", "Data Mapping", "Data Migration", "Data Quality", "Data Governance"]
+    },
+    {
+      title: "Product",
+      icon: "fas fa-cubes",
+      summary: "Connecting user workflows and technology to ensure successful adoption.",
+      skills: ["Product Thinking", "Problem Definition", "Workflow Analysis", "Requirements"]
+    },
+    {
+      title: "Technology",
       icon: "fas fa-code",
-      summary: "Creating clean interfaces and prototypes that make analytical products easier to use.",
-      skills: ["JavaScript", "React", "HTML5", "CSS3", "Flask", "Figma", "Canva", "Netlify"]
-    },
-    {
-      title: "Communication & Leadership",
-      icon: "fas fa-users",
-      summary: "Explaining technical ideas, enabling communities, and aligning teams around outcomes.",
-      skills: ["Workshops", "Hackathons", "Technical Writing", "Presentations", "Community Building", "Cross-functional Collaboration"]
+      summary: "Building and integrating technical solutions across cloud and AI stacks.",
+      skills: ["Python", "AI/ML", "Git/GitHub", "Cloud"]
     }
   ],
   experience: [
     {
       company: "Prospecta Software",
-      role: "Solutions Consultant | Noida",
-      period: "Jun 2026 - Present",
+      role: "Solutions Consultant",
+      period: "Nov 2025 - Present",
       points: [
-        "Promoted to Solutions Consultant, leading client engagement sessions to define complex business problems and architect scalable technical solutions.",
-        "Mentor Associate Consultants and junior team members, fostering technical excellence and best practices in project delivery.",
-        "Drive optimization initiatives on the MDO platform, improving system performance and data quality standards across clients.",
-        "Lead end-to-end solution design from discovery through implementation, ensuring strategic alignment with business objectives."
-      ]
-    },
-    {
-      company: "Prospecta Software",
-      role: "Associate Consultant | Noida",
-      period: "Nov 2025 - May 2026",
-      points: [
-        "Translate client needs into structured requirements, workflows, blueprints, test cases, and implementation plans.",
-        "Configure MDO datasets, business rules, and data workflows to improve data quality and process reliability.",
-        "Write DAXE logic for data processing and support projects from implementation through UAT."
+        "Lead client requirements gathering across Chemical, Mining, Energy, and Manufacturing sectors, translating business needs into documented functional solutions and workflows.",
+        "Drive enterprise master data management using Prospecta MDO, overseeing data cleansing, mapping to SAP fields, data migration, and delta synchronization.",
+        "Configure data workflows, business rules, and DAXE transformation logic to enforce master data quality and governance standards.",
+        "Support end-to-end delivery by preparing technical documentation, designing test cases, and leading UAT validation."
       ]
     },
     {
@@ -168,59 +152,37 @@ const portfolio = {
   ],
   achievements: [
     {
-      value: "MVP",
-      title: "Microsoft MVP Award Nominee",
-      icon: "fas fa-award",
-      text: "Nominated for the Microsoft Most Valuable Professional Award in 2024 and 2025."
+      value: "3,000+",
+      title: "Learners Mentored",
+      icon: "fas fa-users",
+      text: "Mentored students globally across data, cloud, and AI engineering initiatives."
     },
     {
-      value: "2+",
-      title: "Live Projects",
-      icon: "fas fa-rocket",
-      text: "Deployed product surfaces including an NLP review analyzer and multilingual booking platform."
+      value: "15",
+      title: "Technical Talks",
+      icon: "fas fa-chalkboard-teacher",
+      text: "Delivered sessions on technology adoption, problem-solving, and practical implementation."
     },
     {
-      value: "1.5+",
-      title: "Years Experience",
-      icon: "fas fa-briefcase",
-      text: "Hands-on work across consulting, analytics, product prototypes, ML, and business problem solving."
+      value: "10",
+      title: "Coding Competitions",
+      icon: "fas fa-code",
+      text: "Organized and facilitated coding challenges to build applied technical confidence."
     },
     {
-      value: "10+",
-      title: "Hackathons Enabled",
-      icon: "fas fa-medal",
-      text: "Organized and supported events that helped students solve practical technology challenges."
-    },
-    {
-      value: "100+",
-      title: "Cloud Skill Challenges",
-      icon: "fas fa-cloud",
-      text: "Helped learners build applied cloud confidence through Microsoft community initiatives."
-    },
-    {
-      value: "AWS",
-      title: "AI Engineering Community",
-      icon: "fas fa-network-wired",
-      text: "Community Builder experience focused on AI engineering, learning, and technical contribution."
-    },
-    {
-      value: "MSA",
-      title: "Microsoft Student Ambassador",
-      icon: "fas fa-certificate",
-      text: "Recognition for community leadership, technical workshops, and student enablement."
+      value: "5",
+      title: "Hackathons",
+      icon: "fas fa-laptop-code",
+      text: "Orchestrated events focused on turning conceptual ideas into functional prototypes."
     }
   ],
   wins: [
-    { title: "MVP", subtitle: "Microsoft award nominee", note: "Nominated for Microsoft Most Valuable Professional Award in 2024 and 2025." },
-    { title: "Promotion", subtitle: "Solutions Consultant", note: "Moved from associate to solution ownership in under a year." },
-    { title: "GDSC", subtitle: "Project and data science lead", note: "Led community project and data-science initiatives across 2023 - 2025." },
-    { title: "50k+", subtitle: "Daily logs interpreted", note: "ML anomaly dashboard work for enterprise onboarding workflows." },
-    { title: "100+", subtitle: "Cloud challenges enabled", note: "Community-led learning events and technical sessions." },
-    { title: "2+", subtitle: "Live product surfaces", note: "Shipped practical analytics and AI-first tooling." },
-    { title: "10+", subtitle: "Hackathons facilitated", note: "Hands-on mentorship and problem framing support." },
-    { title: "AWS", subtitle: "AI engineering community", note: "Contributor focused on practical AI implementation." },
-    { title: "MSA", subtitle: "Microsoft Student Ambassador", note: "Technical outreach, workshops, and ecosystem support." },
-    { title: "Cross-functional", subtitle: "Consulting x Data x Product", note: "Delivery at the intersection of business and technical execution." }
+    { title: "3,000+", subtitle: "Learners mentored globally", note: "Supported technology learning and enablement." },
+    { title: "Consulting", subtitle: "Business, Data & Product", note: "Delivery across enterprise master data management and workflow implementation." },
+    { title: "15", subtitle: "Technical talks delivered", note: "Sessions covering AI, cloud, and practical development." },
+    { title: "5", subtitle: "Hackathons orchestrated", note: "Hands-on mentorship and problem framing support." },
+    { title: "10", subtitle: "Coding competitions", note: "Building applied technical confidence through community events." },
+    { title: "Prospecta", subtitle: "Solutions Consultant", note: "Translating complex requirements into data-driven enterprise solutions." }
   ]
 };
 
