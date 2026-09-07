@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-    --surface: #fffaf5;
+  --surface: #fffaf5;
   --surface-alt: #fffdf9;
   --text-inverse: #fff7ef;
   --text-nav: #3e2930;
@@ -465,6 +465,35 @@ img {
   z-index: 1;
 }
 
+.experience-photo {
+  min-height: 38rem;
+  margin-top: 5rem;
+}
+
+.experience-photo .paper-note--back {
+  inset: 1rem auto auto 0;
+  width: 95%;
+  max-width: 29rem;
+  height: 33rem;
+  transform: rotate(-3deg);
+}
+
+.experience-photo .console__top {
+  right: auto;
+  left: 1.5rem;
+  bottom: auto;
+  top: 3rem;
+  width: 85%;
+  max-width: 25rem;
+  transform: rotate(2deg);
+}
+
+.experience-photo .paper-caption {
+  right: auto;
+  left: 6rem;
+  bottom: 0rem;
+}
+
 .metric-ticker {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -618,6 +647,7 @@ img {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -645,7 +675,7 @@ img {
 }
 
 .education-item span,
-.experience-item__summary > span:last-of-type,
+.experience-item__summary>span:last-of-type,
 .experience-item__top span,
 .case-card__category {
   color: var(--wine-2);
@@ -739,7 +769,7 @@ img {
   padding-left: 1.8rem;
 }
 
-.experience-item li + li {
+.experience-item li+li {
   margin-top: 0.55rem;
 }
 
@@ -1543,7 +1573,7 @@ img {
     grid-template-columns: auto minmax(0, 1fr) auto;
   }
 
-  .experience-item__summary > span:last-of-type {
+  .experience-item__summary>span:last-of-type {
     grid-column: 2 / -1;
     white-space: normal;
   }
@@ -1574,6 +1604,7 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -1608,19 +1639,19 @@ img {
   --line-strong: #404040;
   --shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
   --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.25);
-  
+
   --surface: #1e1e1e;
   --surface-alt: #242424;
   --text-inverse: #121212;
   --text-nav: #e0e0e0;
   --text-muted-alt: #b0b0b0;
   --wine-hover: #ffb3c6;
-  
+
   --bg-gradient-1: rgba(226, 140, 155, 0.035);
   --bg-gradient-2: rgba(139, 195, 235, 0.025);
   --bg-gradient-3-start: #181818;
   --bg-gradient-3-end: #1e1e1e;
-  
+
   --bg-overlay-1: rgba(226, 140, 155, 0.018);
   --bg-overlay-2: rgba(212, 174, 110, 0.08);
 }
@@ -1628,27 +1659,34 @@ img {
 [data-theme="dark"] .brand__mark {
   background: var(--surface);
 }
+
 [data-theme="dark"] .console__top img {
   filter: saturate(0.8) contrast(1.1) brightness(0.8);
 }
+
 [data-theme="dark"] .btn--primary {
   color: var(--text-inverse);
 }
+
 [data-theme="dark"] .btn--primary:hover {
   color: var(--text-inverse);
   background: var(--wine-hover);
 }
+
 [data-theme="dark"] .paper-note--back {
   background: var(--surface-alt);
 }
+
 [data-theme="dark"] .metric-ticker a,
 [data-theme="dark"] .metric-ticker span {
   background: rgba(30, 30, 30, 0.82);
 }
+
 [data-theme="dark"] .metric-ticker a:hover,
 [data-theme="dark"] .metric-ticker a:focus-visible {
   background: var(--surface);
 }
+
 [data-theme="dark"] .thesis-board article,
 [data-theme="dark"] .experience-item,
 [data-theme="dark"] .education-item,
@@ -1661,44 +1699,55 @@ img {
 [data-theme="dark"] .orbit-profile {
   background: rgba(30, 30, 30, 0.78);
 }
+
 [data-theme="dark"] .site-header {
   background: rgba(18, 18, 18, 0.84);
 }
+
 [data-theme="dark"] .site-header.is-scrolled {
   background: rgba(18, 18, 18, 0.96);
 }
+
 [data-theme="dark"] .marquee-band {
   background: var(--surface-alt);
   color: var(--wine);
   border-block: 1px solid var(--line);
 }
+
 [data-theme="dark"] .marquee-track span::after {
   color: var(--wine);
 }
+
 [data-theme="dark"] .proof {
   background: var(--surface-alt);
   color: var(--ink);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
+
 [data-theme="dark"] .proof .section-heading h2,
 [data-theme="dark"] .proof .eyebrow {
   color: var(--ink);
 }
+
 [data-theme="dark"] .proof-log {
   border: 1px solid var(--line);
   background: var(--line);
 }
+
 [data-theme="dark"] .proof-item {
   background: var(--surface);
 }
+
 [data-theme="dark"] .proof-item strong,
 [data-theme="dark"] .proof-item h3 {
   color: var(--ink);
 }
+
 [data-theme="dark"] .proof-item p {
   color: var(--muted);
 }
+
 [data-theme="dark"] .contact-form input,
 [data-theme="dark"] .contact-form textarea {
   background: rgba(30, 30, 30, 0.82);
