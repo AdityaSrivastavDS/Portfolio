@@ -65,16 +65,6 @@ const portfolio = {
       ]
     },
     {
-      company: "Peroptyx",
-      role: "Data Analyst",
-      period: "Mar 2024",
-      points: [
-        "Reviewed geographic data for accuracy, completeness, and quality standards.",
-        "Analyzed spatial patterns and inconsistencies to improve map performance and usability.",
-        "Helped streamline validation workflows and improve review efficiency."
-      ]
-    },
-    {
       company: "360DigiTMG",
       role: "Data Science Trainee",
       period: "Oct 2023 - Nov 2023",
@@ -278,7 +268,32 @@ function initReveal() {
 }
 
 function initThemeToggle() {
-  return;
+  const toggleBtn = document.getElementById("theme-toggle");
+  const themeIcon = document.getElementById("theme-icon");
+  if (!toggleBtn || !themeIcon) return;
+
+  // Set initial theme based on localStorage
+  const currentTheme = localStorage.getItem("theme");
+  if (currentTheme) {
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    if (currentTheme === "dark") {
+      themeIcon.classList.replace("fa-moon", "fa-sun");
+    }
+  }
+
+  // Toggle theme on click
+  toggleBtn.addEventListener("click", () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      document.documentElement.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+      themeIcon.classList.replace("fa-sun", "fa-moon");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      themeIcon.classList.replace("fa-moon", "fa-sun");
+    }
+  });
 }
 
 function initCursor() {
@@ -510,9 +525,15 @@ function renderSkillsOrbit() {
   container.innerHTML = `
     <div class="skills-orbit__center">SKILLS</div>
     ${nodes.map((node, index) => {
-      const ring = index % 4;
-      const radius = 86 + ring * 44;
-      const angle = (360 / nodes.length) * index;
+      let ringIndex, nodesInRing, radius, angleOffset = 0;
+      if (index < 5) {
+        ringIndex = index; nodesInRing = 5; radius = 120;
+      } else if (index < 14) {
+        ringIndex = index - 5; nodesInRing = 9; radius = 195; angleOffset = 20;
+      } else {
+        ringIndex = index - 14; nodesInRing = nodes.length - 14; radius = 270; angleOffset = 10;
+      }
+      const angle = ((360 / nodesInRing) * ringIndex) + angleOffset;
       return `
         <button class="skills-orbit__node" type="button" style="--angle:${angle}deg; --radius:${radius}px" data-skill="${node.skill}" data-group="${node.group}" aria-label="${node.skill}: ${node.group}">
           <span>${node.skill}</span>
