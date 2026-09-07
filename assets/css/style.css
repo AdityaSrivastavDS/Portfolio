@@ -431,8 +431,8 @@ img {
 
 .console__top img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: auto;
+  display: block;
   filter: saturate(0.92) contrast(0.96);
 }
 
