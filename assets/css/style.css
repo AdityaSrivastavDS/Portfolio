@@ -490,6 +490,36 @@ img {
   padding: 0;
 }
 
+.hero-cube::after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28rem;
+  height: 2rem;
+  background: radial-gradient(ellipse at center, 
+    rgba(255, 140, 0, 0.8) 0%, 
+    rgba(255, 180, 0, 0.4) 50%, 
+    rgba(255, 200, 0, 0) 80%);
+  filter: blur(0.5rem);
+  box-shadow: 0 0 2rem 0.5rem rgba(255, 140, 0, 0.4);
+  mix-blend-mode: normal;
+  z-index: -2;
+  pointer-events: none;
+  animation: fairyPulse 3s infinite alternate ease-in-out;
+}
+
+@keyframes fairyPulseCore {
+  0% { opacity: 0.6; transform: translateX(-50%) scaleX(0.8) scaleY(0.9); }
+  100% { opacity: 1; transform: translateX(-50%) scaleX(1.1) scaleY(1.2); }
+}
+
+@keyframes fairyPulse {
+  0% { opacity: 0.7; transform: translateX(-50%) scale(0.95); }
+  100% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+}
+
 .hero-cube .cube-container {
   width: 28rem;
   height: 35rem;
@@ -1820,4 +1850,13 @@ img {
 [data-theme="dark"] .contact-form input,
 [data-theme="dark"] .contact-form textarea {
   background: rgba(30, 30, 30, 0.82);
+}
+
+[data-theme="dark"] .hero-cube::after {
+  background: radial-gradient(ellipse at center, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(255, 255, 255, 0.6) 50%, 
+    rgba(255, 255, 255, 0) 80%);
+  box-shadow: 0 0 2rem 0.5rem rgba(255, 255, 255, 0.5);
+  mix-blend-mode: color-dodge;
 }
