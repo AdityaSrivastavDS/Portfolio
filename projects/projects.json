@@ -1,5 +1,33 @@
 [
   {
+    "name": "SAP Ariba Adoption Intelligence & Procurement Transformation",
+    "role": "Excel Dashboard",
+    "category": "Analytics",
+    "summary": "Enterprise Excel dashboard for monitoring SAP Ariba adoption, KPI performance, and procurement transformation insights.",
+    "desc": "An interactive enterprise analytics solution that evaluates SAP Ariba solution adoption, tracks KPI performance, identifies business-unit and regional gaps, and supports data-driven procurement decisions through executive-level reporting.",
+    "problem": "Organisations often lack a unified view of SAP Ariba adoption and KPI performance across business units, making it difficult to identify gaps and monitor transformation progress.",
+    "approach": "Analysed SAP Ariba KPI master data, developed a structured data model, created supporting simulated performance data, and built an interactive Excel dashboard with executive reporting, KPI analysis, solution adoption tracking, and exception management.",
+    "impact": "Demonstrates how enterprise KPI data can be transformed into actionable business insights through structured analytics, performance monitoring, and consulting-driven recommendations.",
+    "stack": [
+      "Microsoft Excel",
+      "Power Query",
+      "Data Modeling",
+      "KPI Management",
+      "Enterprise Analytics",
+      "SAP Ariba"
+    ],
+    "image": "executive",
+    "focus": [
+      "featured",
+      "data",
+      "product"
+    ],
+    "links": {
+      "view": "",
+      "code": "https://github.com/AdityaSrivastavDS/SAP-Ariba-Intelligence-Dashboard"
+    }
+  },
+  {
     "name": "PoseGuard",
     "role": "ML / Computer Vision",
     "category": "Machine Learning",
